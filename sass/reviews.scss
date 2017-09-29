@@ -1,0 +1,28 @@
+.reviews {
+  padding: 0 30px;
+  outline: 1px solid red;
+  color: #444444;
+  font-weight: 400;
+  font-size: $main-font-size;
+  line-height: 30px;
+}
+
+.reviews__title {
+  color: $main-color;
+  font-size: $main-font-size + 8;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__author-name {
+  font-style: normal;
+  color: $main-color;
+  font-weight: 700;
+}
+
+.reviews__author-nickname {
+  color: #444444;
+  font-weight: 400;
+}
