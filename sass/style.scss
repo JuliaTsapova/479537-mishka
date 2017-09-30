@@ -1,0 +1,55 @@
+$main-background-color: #ffffff;
+$main-font-size: 17px;
+$main-color: #000000;
+$additional-color: rgba(68, 68, 68, 1);
+
+body {
+  background-color: $main-background-color;
+  font-size: $main-font-size;
+  color: $main-color;
+  font-family: "OpenSans", "Arial", sans-serif;
+}
+
+@font-face {
+  font-family: "OpenSans", "Arial", sans-serif;
+  src: url(../fonts/opensans.woff);
+  src: url(../fonts/opensans.woff2);
+  src: url(../fonts/opensansbold.woff);
+  src: url(../fonts/opensansbold.woff2);
+}
+
+@import "page-header.scss";
+
+@import "main-nav.scss";
+
+@import "page-main.scss";
+
+@import "main-title.scss";
+
+@import "type-of-product.scss";
+
+@import "popular.scss";
+
+@import "features.scss";
+
+@import "reviews.scss";
+
+@import "contacts.scss";
+
+@import "page-footer.scss";
+
+@import "social-list.scss";
+
+@import "button.scss";
+
+@import "product-card.scss";
+
+@import "production.scss";
+
+@import "form-title.scss";
+
+@import "order-form.scss";
+
+@import "modal.scss";
+
+@import "size-list.scss";

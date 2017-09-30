@@ -1,0 +1,29 @@
+.modal {
+  display: block;
+  padding: 0 30px;
+  outline: 1px solid pink;
+}
+
+.modal__title{
+  font-weight: 700;
+  font-size: $main-font-size + 8;
+  line-height: 30px;
+}
+
+.modal__size {
+  color: #444444;
+  font-weight: 400;
+  font-size: $main-font-size - 2;
+  line-height: 30px;
+}
+
+.modal__list {
+  list-style: none;
+  padding: 0;
+}
+
+.modal__add {
+  background-color: #63d1bb;
+  color: #ffffff;
+  border-color: #ffffff;
+}
