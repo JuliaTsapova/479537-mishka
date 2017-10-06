@@ -1,0 +1,161 @@
+.popular__wrapper {
+  width: auto;
+  outline: 1px solid blue;
+}
+
+.popular {
+  outline: 1px solid red;
+  padding: 27px 30px;
+  height: 766px;
+  width: 260px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.popular > * {
+  outline: 1px solid blue;
+}
+
+.popular__main-title {
+  font-size: $main-font-size + 8;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0 0 4px;
+}
+
+.popular__title {
+  color: #63d1bb;
+  line-height: 20px;
+  font-size: $main-font-size;
+  font-weight: 700;
+  margin: 0 0 24px;
+  text-transform: uppercase;
+}
+
+.popular__description {
+  font-size: $main-font-size - 2;
+  color: #444444;
+  line-height: 24px;
+  font-weight: 400;
+  outline: 1px solid blue;
+  margin: 0 0 12px;
+}
+
+.popular__info {
+  font-size: $main-font-size - 2;
+  color: #444444;
+  line-height: 20px;
+  font-weight: 400;
+  width: 260px;
+  margin: 0 0 26px;
+  // text-align: left;
+  // height: 120px;
+  // outline: 1px solid red;
+  // margin-top: -8px;
+}
+
+.popular__info-row {
+  height: 40px;
+  vertical-align: bottom;
+}
+
+.popular__image {
+  opacity: 0.5;
+  margin: 0 0 24px;
+}
+
+.popular__price {
+  color: #444444;
+  font-weight: 700;
+  line-height: 24px;
+  align-self: center;
+  margin: 0 0 26px;
+}
+@media (min-width: $tablet-width) {
+  .popular {
+    height: 522px;
+    width: 672px;
+    // flex-direction: row;
+    align-items: flex-start;
+    padding: 44px 48px;
+  }
+
+  .popular__main-title {
+    font-size: $main-font-size + 26;
+    line-height: 50px;
+    margin: 0 0 48px;
+    // width: 300px;
+  }
+
+  .popular__title {
+    width: 130px;
+    text-align: center;
+    margin: 8px 0 58px 114px;
+    order: 1;
+  }
+
+  .popular__description {
+    width: 300px;
+    font-size: $main-font-size;
+    line-height: 30px;
+    margin: 0 0 32px;
+  }
+
+  .popular__info {
+    width: 300px;
+    margin: 0 0 56px;
+  }
+
+  .popular__price {
+    font-size: $main-font-size + 3;
+    line-height: 24px;
+    margin: 0 0 34px 73px;
+    align-self: flex-start;
+  }
+
+  .popular__order {
+    width: 288px;
+  }
+
+  .popular__image {
+    width: 333px;
+    height: 404px;
+    margin:0 0 0 -92px;
+    order: 2;
+  }
+}
+@media (min-width: $desktop-width) {
+  .popular {
+    height: 715px;
+    width: 1050px;
+    background-image: url("../img/triple-set-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 573px 74px;
+    align-content: flex-start;
+  }
+
+  .popular__main-title {
+    font-size: $main-font-size + 36;
+    line-height: 57px;
+    margin-top: 82px;
+  }
+
+  .popular__image {
+    @include visually-hidden;
+  }
+
+  .popular__title {
+    order: -1;
+    margin: 94px 24px 600px 18px;
+  }
+
+  .popular__description {
+    margin-bottom: 46px;
+  }
+
+  .popular__info{
+    margin-bottom: 106px;
+  }
+}

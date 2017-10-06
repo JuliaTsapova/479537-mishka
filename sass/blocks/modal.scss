@@ -2,6 +2,7 @@
   display: block;
   padding: 0 30px;
   outline: 1px solid pink;
+  @include visually-hidden;
 }
 
 .modal__title{

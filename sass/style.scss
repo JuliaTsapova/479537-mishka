@@ -2,54 +2,111 @@ $main-background-color: #ffffff;
 $main-font-size: 17px;
 $main-color: #000000;
 $additional-color: rgba(68, 68, 68, 1);
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensans.woff2"),
+    url("../fonts/opensans.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensansbold.woff2"),
+    url("../fonts/opensansbold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
 
 body {
   background-color: $main-background-color;
   font-size: $main-font-size;
   color: $main-color;
   font-family: "OpenSans", "Arial", sans-serif;
+  margin: 0;
+}
+body {
+  background: url("../img/mishka-form-mobile.jpg") no-repeat 50% 0;
+  background-position: top;
+  // background-size: 720px auto;
+  min-height: 3932;
 }
 
-@font-face {
-  font-family: "OpenSans", "Arial", sans-serif;
-  src: url(../fonts/opensans.woff);
-  src: url(../fonts/opensans.woff2);
-  src: url(../fonts/opensansbold.woff);
-  src: url(../fonts/opensansbold.woff2);
+
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-@import "page-header.scss";
+@media (min-width: $tablet-width) {
+  body {
+    background: url("../img/mishka-form-tablet.jpg") no-repeat 50% 0;
+    // background-size: 1178px auto;
+  }
+}
 
-@import "main-nav.scss";
+@media (min-width: $desktop-width) {
+  body {
+    background: url("../img/mishka-form-desktop.jpg") no-repeat 50% 0;
+    // background-size: 1391px auto;
+  }
+}
 
-@import "page-main.scss";
 
-@import "main-title.scss";
+@import "blocks/button.scss";
 
-@import "type-of-product.scss";
+@import "blocks/page-header.scss";
 
-@import "popular.scss";
+@import "blocks/main-nav.scss";
 
-@import "features.scss";
+@import "blocks/page-main.scss";
 
-@import "reviews.scss";
+@import "blocks/title-wrapper.scss";
 
-@import "contacts.scss";
+@import "blocks/type-of-product.scss";
 
-@import "page-footer.scss";
+@import "blocks/popular.scss";
 
-@import "social-list.scss";
+@import "blocks/features.scss";
 
-@import "button.scss";
+@import "blocks/reviews.scss";
 
-@import "product-card.scss";
+@import "blocks/contacts.scss";
 
-@import "production.scss";
+@import "blocks/page-footer.scss";
 
-@import "form-title.scss";
+@import "blocks/social-list.scss";
 
-@import "order-form.scss";
+@import "blocks/color-wrapper.scss";
 
-@import "modal.scss";
+@import "blocks/catalog-wrapper.scss";
 
-@import "size-list.scss";
+@import "blocks/product-card.scss";
+
+@import "blocks/production.scss";
+
+@import "blocks/form-title.scss";
+
+@import "blocks/order-form.scss";
+
+@import "blocks/modal.scss";
+
+@import "blocks/size-list.scss";

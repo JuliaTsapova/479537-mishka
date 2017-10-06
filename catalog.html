@@ -23,24 +23,41 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="main-title">Каталог товаров</h1>
-
+    <header class="title-wrapper">
+    <h1 class="title-wrapper__main">Каталог товаров</h1>
+  </header>
+  <div class="catalog-wrapper">
     <article class="product-card product-card--bunny">
-      <img class="product-card__image" src="../img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+      <img class="product-card__image product-card__image--mobile" src="../img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+      <img class="product-card__image product-card__image--tablet" src="../img/photo-hare-tablet.jpg" width="334" height="334" alt="Зайчик-попрыгайчик">
+      <img class="product-card__image product-card__image--desktop" src="../img/photo-hare-desktop.jpg" width="316" height="463" alt="Зайчик-попрыгайчик">
+
+      <div class="product-card__description">
       <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
-      <p class="product-card__description">Рост 30 см, вес 200 г</p>
+      <p class="product-card__info">Рост 30 см, вес 200 г</p>
+    </div>
       <span class="product-card__price">1 200 руб.</span>
     </article>
     <article class="product-card product-card--basket">
-      <img class="product-card__image" src="../img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзина для белья">
+      <img class="product-card__image product-card__image--mobile" src="../img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзина для белья">
+      <img class="product-card__image product-card__image--tablet" src="../img/photo-bowl-tablet.jpg" width="334" height="334" alt="Корзина для белья">
+      <img class="product-card__image product-card__image--desktop" src="../img/photo-bowl-desktop.jpg" width="316" height="463" alt="Корзина для белья">
+
+      <div class="product-card__description">
       <h2 class="product-card__title">Корзинка для белья</h2>
-      <p class="product-card__description">Диаметр 15 см, высота 10 см</p>
+      <p class="product-card__info">Диаметр 15 см, высота 10 см</p>
+      </div>
       <span class="product-card__price">690 руб.</span>
     </article>
     <article class="product-card product-card--big-basket">
-      <img class="product-card__image" src="../img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзина для игрушек">
+      <img class="product-card__image product-card__image--mobile" src="../img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзина для игрушек">
+      <img class="product-card__image product-card__image--tablet" src="../img/photo-toys-tablet.jpg" width="334" height="334" alt="Большая корзина для игрушек">
+      <img class="product-card__image product-card__image--desktop" src="../img/photo-toys-desktop.jpg" width="316" height="463" alt="Большая корзина для игрушек">
+
+      <div class="product-card__description">
       <h2 class="product-card__title">Большая корзинка для игрушек</h2>
-      <p class="product-card__description">Диаметр 30 см, высота 30 см</p>
+      <p class="product-card__info">Диаметр 30 см, высота 30 см</p>
+    </div>
       <span class="product-card__price">1 500 руб.</span>
     </article>
     <section class="production">
@@ -51,14 +68,18 @@
       <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
       <a class="production__order button" href="#">Сделать заказ</a>
     </section>
+  </div>
   </main>
   <footer class="page-footer">
+    <div class="page-footer__wrapper">
+    <p class="page-footer__mishka">MISHKA</P>
     <ul class="page-footer__social social-list">
-      <li class="social-list__item social-list__item--instagram"><a class="social-list__link" href="#">Instagram</a></li>
-      <li class="social-list__item social-list__item--facebook"><a class="social-list__link" href="#">Facebook</a></li>
-      <li class="social-list__item social-list__item--twitter"><a class="social-list__link" href="#">Twitter</a></li>
+      <li class="social-list__item social-list__item--instagram"><a class="social-list__link" href="#">IG</a></li>
+      <li class="social-list__item social-list__item--facebook"><a class="social-list__link" href="#">FB</a></li>
+      <li class="social-list__item social-list__item--twitter"><a class="social-list__link" href="#">TW</a></li>
     </ul>
     <p class="page-footer__copyright">Разработано<img class="page-footer__copyright-logo" src="../img/logo-htmlacademy.svg" width="30" height="32" alt="HTML Academy"></p>
+  </div>
   </footer>
   <div class="modal">
     <p class="modal__title">Добавить в корзину</p>

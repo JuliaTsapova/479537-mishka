@@ -1,0 +1,17 @@
+.social-list{
+  padding: 30px 0;
+  width: 144px;
+  display: flex;
+  justify-content: space-between;
+  outline: 1px solid red;
+}
+
+.social-list__link {
+  color: $main-color;
+  text-decoration: none;
+}
+@media (min-width: $tablet-width) {
+  .social-list {
+  padding: 60px 0;
+  }
+}

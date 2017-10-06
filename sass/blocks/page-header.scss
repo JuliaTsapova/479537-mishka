@@ -1,0 +1,28 @@
+.page-header{
+  outline: 1px solid red;
+  padding: 0 30px;
+  height: 80px;
+  // height: 396px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // justify-content: flex-end;
+}
+
+.page-header__logo {
+  height: 80px;
+  margin: 0 auto;
+  outline: 1px solid gray;
+}
+
+.page-header__logo-image {
+  padding-top: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header{ height: 88px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+}
