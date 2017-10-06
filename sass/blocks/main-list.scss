@@ -1,0 +1,141 @@
+.main-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+  height: 410px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  z-index: 1;
+  outline: 1px solid green;
+}
+
+.main-list__item {
+  width: 245px;
+  // display: none;
+  padding: 28px 0 28px 75px;
+  // width: auto;
+  outline: 1px solid purple;
+  // margin: 0 auto;
+  &--new {
+    display: none;
+  }
+
+  &--sale {
+    display: none;
+  }
+
+  &--delivery {
+    display: none;
+  }
+}
+
+.main-list__link {
+  text-decoration: none;
+  font-size: $main-font-size;
+  line-height: 24px;
+  font-weight: 700;
+  color: $main-color;
+}
+@media (min-width: $tablet-width) {
+  .main-list {
+    width: 668px;
+    padding: 0 50px;
+    height: 132px;
+    align-content: space-between;
+    // flex-direction: row;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-list__item {
+    padding: 0;
+
+    &--delivery {
+      display: block;
+    }
+
+    &--order {
+      margin-top: 90px;
+    }
+
+    &--user {
+      padding: 30px 0;
+    }
+
+    &--search {
+      width: 82px;
+    }
+
+    &--basket {
+      margin-bottom: 8px;
+    }
+  }
+
+  .main-list__link {
+    &--catalog {
+      font-size: $main-font-size - 2;
+    }
+
+    &--order {
+      font-size: $main-font-size - 2;
+    }
+
+    &--delivery {
+      font-size: $main-font-size - 2;
+      font-weight: 400;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .main-list {
+    width: 1050px;
+    padding: 0;
+  }
+
+  .main-list__item {
+    order: 0;
+
+    &--catalog {
+      order: -4;
+      padding: 32px 0;
+      margin-bottom: 15px;
+    }
+
+    &--new {
+      display: block;
+      order: -3;
+    }
+
+    &--order {
+      order: -2;
+      padding: 32px 0;
+      margin-bottom: 15px;
+      margin-top: 0;
+    }
+
+    &--sale {
+      display: block;
+      order: -1;
+    }
+
+    &--search {
+      order: 1;
+    }
+
+    &--basket {
+      order: 2;
+      padding: 32px 0;
+      margin-bottom: 15px;
+    }
+
+    &--delivery {
+      order: 3;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.logo {
+  height: 80px;
+  // width: 320px;
+  width: 86px;
+  margin: 0 auto;
+}
+@media (min-width: $tablet-width) {
+  .logo {
+    height: 88px;
+    margin: 0;
+    // order: -5;
+  }
+}
+@media (min-width: $desktop-width) {
+  .logo {
+    height: 88px;
+    margin: 0 65px;
+    // order: -5;
+  }
+}
