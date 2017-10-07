@@ -39,6 +39,9 @@ body {
   // background-size: 720px auto;
 }
 
+*, *::after, *::before {
+  box-sizing: border-box;
+}
 
 
 @mixin visually-hidden {
