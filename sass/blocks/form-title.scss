@@ -5,7 +5,7 @@
   color: #444444;
   padding: 0 30px;
   margin: 0 auto;
-  width: 260px; // margin-top: 21px;
+  width: 320px; // margin-top: 21px;
   outline: 1px solid blue;
 }
 @media (min-width: $tablet-width) {
@@ -13,7 +13,7 @@
     font-size: $main-font-size;
     line-height: 30px;
     padding: 0 50px;
-    width: 668px;
+    width: 768px;
     margin-bottom: 42px;
   }
 }

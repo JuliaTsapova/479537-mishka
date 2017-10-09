@@ -4,27 +4,18 @@ $main-color: #000000;
 $additional-color: rgba(68, 68, 68, 1);
 $tablet-width: 768px;
 $desktop-width: 1150px;
-
-
 @font-face {
   font-family: "OpenSans";
-  src: url("../fonts/opensans.woff2"),
-    url("../fonts/opensans.woff");
-    font-weight: 400;
-    font-style: normal;
+  src: url("../fonts/opensans.woff2"), url("../fonts/opensans.woff");
+  font-weight: 400;
+  font-style: normal;
 }
-
-
 @font-face {
   font-family: "OpenSans";
-  src: url("../fonts/opensansbold.woff2"),
-    url("../fonts/opensansbold.woff");
-    font-weight: 700;
-    font-style: normal;
+  src: url("../fonts/opensansbold.woff2"), url("../fonts/opensansbold.woff");
+  font-weight: 700;
+  font-style: normal;
 }
-
-
-
 
 body {
   background-color: $main-background-color;
@@ -33,17 +24,18 @@ body {
   font-family: "OpenSans", "Arial", sans-serif;
   margin: 0;
 }
+
 body {
   // background: url("../img/mishka-form-mobile.jpg") no-repeat 50% 0;
   // background-position: top;
   // background-size: 720px auto;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
-
-
 @mixin visually-hidden {
   position: absolute;
   width: 1px;
@@ -57,62 +49,38 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 @media (min-width: $tablet-width) {
   body {
     // background: url("../img/mishka-form-tablet.jpg") no-repeat 50% 0;
     // background-size: 1178px auto;
   }
 }
-
 @media (min-width: $desktop-width) {
   body {
     // background: url("../img/mishka-form-desktop.jpg") no-repeat 50% 0;
     // background-size: 1391px auto;
   }
 }
-
-
 @import "blocks/button.scss";
-
 @import "blocks/page-header.scss";
-
 @import "blocks/main-nav.scss";
-
 @import "blocks/main-list.scss";
-
 @import "blocks/logo.scss";
-
 @import "blocks/page-main.scss";
-
 @import "blocks/title-wrapper.scss";
-
 @import "blocks/type-of-product.scss";
-
 @import "blocks/popular.scss";
-
 @import "blocks/features.scss";
-
 @import "blocks/reviews.scss";
-
+@import "blocks/reviews__bottom.scss";
 @import "blocks/contacts.scss";
-
 @import "blocks/page-footer.scss";
-
 @import "blocks/social-list.scss";
-
 @import "blocks/color-wrapper.scss";
-
 @import "blocks/catalog-wrapper.scss";
-
 @import "blocks/product-card.scss";
-
 @import "blocks/production.scss";
-
 @import "blocks/form-title.scss";
-
 @import "blocks/order-form.scss";
-
 @import "blocks/modal.scss";
-
 @import "blocks/size-list.scss";

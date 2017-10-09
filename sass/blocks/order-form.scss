@@ -1,7 +1,7 @@
 .order-form {
   outline: 1px solid orange;
   padding: 22px 30px;
-  width: 260px;
+  width: 320px;
   margin: 0 auto 32px;
 }
 
@@ -81,7 +81,7 @@
     width: 768px;
     border: none;
     outline: 1px solid red;
-    padding: 0;
+    padding: 0 50px;
     margin: 0 auto;
   }
 
@@ -89,8 +89,7 @@
     margin: 0;
     position: relative;
     top: 34px;
-    left: 50px;
-
+    // left: 50px;
     &--color {
       top: 66px;
     }
@@ -100,13 +99,12 @@
     }
 
     &--phone {
-      top: -22px;
-      left: -164px;
+      position: static;
+      margin-right: 78px;
     }
 
     &--email {
-      top: -16px;
-      left: -164px;
+      position: static;
     }
 
     &--additionally {
@@ -127,8 +125,13 @@
 
   .order-form__input {
     &--name {
-      // width: 378px;
       width: 280px;
+    }
+
+    &--contacts {
+      width: 501px;
+      margin-left: auto;
+      height: 75px;
     }
   }
 
@@ -139,12 +142,11 @@
   }
 
   .order-form__content-wrapper {
-    width: 503px;
-    padding: 0 50px 0 215px;
-    margin: 0 auto 26px;
+    width: 501px;
+    margin: 0 0 26px auto;
     align-items: flex-start;
     flex-wrap: wrap;
-    // flex-direction: row;
+
     &--type {
       height: 154px;
       flex-direction: column;
@@ -160,15 +162,16 @@
     }
 
     &--contacts {
-      height: 124px;
-      padding: 50px 0 50px 218px;
-      width: 550px;
+      height: auto;
+      padding: 50px;
+      width: 768px;
       margin-bottom: 52px;
+      flex-direction: row;
     }
 
     &--additionally {
-      height: 142px;
-      width: 668px;
+      height: auto;
+      width: 768px;
       padding: 0 50px;
       flex-direction: row-reverse;
       margin-bottom: 54px;
@@ -178,7 +181,7 @@
   .order-form__bottom-wrapper {
     padding: 0 50px;
     margin: 0 auto 50px;
-    width: 668px;
+    width: 768px;
     height: 52px;
     outline: 1px solid blue;
     display: flex;
@@ -199,12 +202,13 @@
 }
 @media (min-width: $desktop-width) {
   .order-form__fieldset {
-    width: 1050px;
+    width: 1150px;
+    padding: 0 50px;
   }
 
   .order-form__content-wrapper {
-    width: 835px;
-    padding: 0 50px 0 165px;
+    width: 700px;
+    margin-right: auto;
 
     &--type {
       margin-bottom: 24px;
@@ -219,28 +223,24 @@
     }
 
     &--contacts {
-      width: 832px;
-      height: 228px;
+      width: 1150px;
+      padding-left: 110px;
+      padding-right: 225px;
     }
 
     &--additionally {
-      padding: 0 175px 0 50px;
-      width: 825px;
+      width: 1150px;
       margin-bottom: 46px;
+      padding-left: 110px;
+      padding-right: 225px;
     }
   }
 
   .order-form__type-of-info {
-    left: 74px;
+    left: 50px;
 
     &--phone {
-      top: -8px;
-      left: -104px;
-    }
-
-    &--email {
-      top: -68px;
-      left: -104px;
+      margin-right: 225px;
     }
 
     &--additionally {
@@ -260,7 +260,7 @@
   }
 
   .order-form__bottom-wrapper {
-    padding: 0 175px;
+    padding: 0;
     width: 700px;
   }
 }

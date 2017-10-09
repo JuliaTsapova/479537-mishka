@@ -58,6 +58,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     width: 768px;
+    // height: 875px;
     margin-bottom: 56px;
   }
 
@@ -106,7 +107,8 @@
 }
 @media (min-width: $desktop-width) {
   .contacts {
-    width: 1050px;
+    padding: 0 50px;
+    width: 1150px;
     height: 546px;
     margin-bottom: 106px;
     flex-direction: column;
@@ -162,9 +164,10 @@
       display: block;
     }
     order: 1;
-  margin: 90px 0 0;
-}
-.contacts__write {
-      margin-left: 174px;
-}
+    margin: 90px 0 0;
+  }
+
+  .contacts__write {
+    margin-left: 174px;
+  }
 }

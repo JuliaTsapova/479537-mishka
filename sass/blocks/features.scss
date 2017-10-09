@@ -1,13 +1,14 @@
-.features{
+.features {
   font-weight: 700;
   line-height: 20px;
   padding: 33px 28px;
   outline: 1px solid purple;
   // height: 830px;
-  height: 764px;
-  width: 264px;
+  // height: 764px;
+  height: 810px;
+  width: 320px;
+  // width: 264px;
   margin: 0 auto;
-
 }
 
 .features__title {
@@ -20,7 +21,7 @@
 .features__list {
   list-style: none;
   padding: 0;
-  margin: 30px 0 0 0;
+  margin: 30px 0 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -31,13 +32,12 @@
 
 .features__item {
   outline: 1px solid lightgray;
-  height: 94px;
+  flex-basis: 94px;
 }
-
 @media (min-width: $tablet-width) {
-  .features{
-    width: 668px;
-    height: 525px;
+  .features {
+    width: 768px;
+    height: 576px;
     padding: 63px 50px;
   }
 
@@ -46,7 +46,7 @@
     line-height: 50px;
   }
 
-  .features__list{
+  .features__list {
     margin-top: 48px;
     height: 410px;
     align-content: flex-start;
@@ -56,22 +56,22 @@
     width: 325px;
     font-size: $main-font-size + 3;
     line-height: 22px;
-    height: 104px;
+    flex-basis: 104px;
   }
-
 }
-
 @media (min-width: $desktop-width) {
-  .features{
-    width: 700px;
+  .features {
+    width: 1150px;
     padding: 58px 225px;
-    height: 545px;
+    height: 580px;
   }
+
   .features__title {
     font-size: $main-font-size + 36;
     line-height: 57px;
   }
-  .features__list{
+
+  .features__list {
     align-content: stretch;
   }
 }

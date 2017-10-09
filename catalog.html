@@ -11,25 +11,26 @@
 <body>
   <header class="page-header">
     <nav class="page-header__main-nav main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
 
-      <ul class="main-nav__menu  main-list--closed">
+      <ul class="main-nav__menu main-list  main-list--closed">
 
         <li class="logo">
-          <a class="logo__link" href="index.html">
+          <a class="logo__link">
         <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
         </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+
         </li>
 
         <li class="main-list__item main-list__item--catalog">
-          <a class="main-list__link" href="catalog.html">Каталог товаров</a>
+          <a class="main-list__link main-list__link--catalog" href="catalog.html">Каталог товаров</a>
         </li>
 
         <li class="main-list__item main-list__item--order">
-          <a class="main-list__link" href="form.html">Вязание на заказ</a>
+          <a class="main-list__link main-list__link--order" href="form.html">Вязание на заказ</a>
         </li>
 
-        <li class="main-list__item main-list__item--search main-list__user">
+        <li class="main-list__item main-list__item--search main-list__item--user">
           <form class="main-list__form" action="https://echo.htmlacademy.ru" method="get">
             <!-- <label class="visually-hidden" for="search"></label> -->
             <input class="main-list__search" id="search" type="search" name="search" placeholder="Поиск по сайту">
@@ -40,16 +41,16 @@
           <a class="main-list__link" href="#">Корзина: пока пуста</a>
         </li>
 
-        <li class="main-list__item main-list__item--hidden">
+        <li class="main-list__item main-list__item--new">
           <a class="main-list__link" href="#">Новые поступления</a>
         </li>
 
-        <li class="main-list__item main-list__item--hidden">
+        <li class="main-list__item main-list__item--sale">
           <a class="main-list__link" href="#">Распродажа</a>
         </li>
 
         <li class="main-list__item main-list__item--delivery">
-          <a class="main-list__link">Бесплатная доставка по России</a>
+          <a class="main-list__link main-list__link--delivery">Бесплатная доставка по России</a>
         </li>
 
       </ul>

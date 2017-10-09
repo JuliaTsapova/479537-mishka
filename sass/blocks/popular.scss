@@ -6,8 +6,8 @@
 .popular {
   outline: 1px solid red;
   padding: 27px 30px;
-  height: 766px;
-  width: 260px;
+  height: 810px;
+  width: 320px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -50,10 +50,6 @@
   font-weight: 400;
   width: 260px;
   margin: 0 0 26px;
-  // text-align: left;
-  // height: 120px;
-  // outline: 1px solid red;
-  // margin-top: -8px;
 }
 
 .popular__info-row {
@@ -75,9 +71,8 @@
 }
 @media (min-width: $tablet-width) {
   .popular {
-    height: 522px;
-    width: 672px;
-    // flex-direction: row;
+    height: 600px;
+    width: 768px;
     align-items: flex-start;
     padding: 44px 48px;
   }
@@ -86,7 +81,6 @@
     font-size: $main-font-size + 26;
     line-height: 50px;
     margin: 0 0 48px;
-    // width: 300px;
   }
 
   .popular__title {
@@ -122,14 +116,14 @@
   .popular__image {
     width: 333px;
     height: 404px;
-    margin:0 0 0 -92px;
+    margin: 0 0 0 -92px;
     order: 2;
   }
 }
 @media (min-width: $desktop-width) {
   .popular {
-    height: 715px;
-    width: 1050px;
+    height: 760px;
+    width: 1150px;
     background-image: url("../img/triple-set-desktop.jpg");
     background-repeat: no-repeat;
     background-position: 573px 74px;
@@ -155,7 +149,7 @@
     margin-bottom: 46px;
   }
 
-  .popular__info{
+  .popular__info {
     margin-bottom: 106px;
   }
 }

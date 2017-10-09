@@ -7,23 +7,23 @@
   font-weight: 700;
   margin: 0 auto;
   width: 320px;
-  // height: 206px;
   display: flex;
   flex-direction: column;
 }
 
-.type-of-product__link{
+.type-of-product__link {
   color: #ffffff;
   text-decoration: none;
 }
 
-.type-of-product__product{
+.type-of-product__product {
   padding: 0 29px;
   height: 103px;
 
   &--accessory {
     background-color: #63d1bb;
   }
+
   &--toy {
     background-color: #56c3b2;
   }
@@ -32,34 +32,33 @@
 .type-of-product__wrapper {
   outline: 1px solid green;
   background-color: #f9f9f9;
-
 }
-
 @media (min-width: $tablet-width) {
-  .type-of-product{
+  .type-of-product {
     flex-direction: row;
     width: 668px;
   }
-  .type-of-product__product{
+
+  .type-of-product__product {
     height: 117px;
     width: 334px;
   }
+
   .type-of-product__wrapper {
-    // width: $tablet-width;
     width: auto;
     margin: 0 auto;
   }
 }
-
 @media (min-width: $desktop-width) {
   .type-of-product {
     width: 1050px;
   }
+
   .type-of-product__product {
     width: 525px;
   }
+
   .type-of-product__wrapper {
     width: auto;
-    // width: $desktop-width + 100;
   }
 }

@@ -1,17 +1,18 @@
 .catalog-wrapper {
   width: 320px;
+  padding: 0 30px;
   margin: 0 auto;
 }
-
 @media (min-width: $tablet-width) {
-  .catalog-wrapper{
-    width: 666px;
+  .catalog-wrapper {
+    width: 768px;
+    padding: 0 50px;
+  }
 }
-}
-
 @media (min-width: $desktop-width) {
   .catalog-wrapper {
-    width: 1050px;
+    width: 1150px;
+    padding: 0 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
