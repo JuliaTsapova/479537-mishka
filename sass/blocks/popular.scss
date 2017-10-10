@@ -6,7 +6,7 @@
 .popular {
   outline: 1px solid red;
   padding: 27px 30px;
-  height: 815px;
+  min-height: 815px;
   width: 320px;
   margin: 0 auto;
   display: flex;
@@ -74,10 +74,11 @@
 }
 @media (min-width: $tablet-width) {
   .popular {
-    height: 600px;
+    min-height: 600px;
     width: 768px;
     align-items: flex-start;
     padding: 44px 48px;
+    flex-direction: row;
   }
 
   .popular__main-title {
@@ -92,7 +93,7 @@
     width: 130px;
     text-align: center;
     margin: 8px 0 58px 114px;
-    order: 1;
+    // order: 1;
   }
 
   .popular__description {
@@ -104,30 +105,13 @@
 
   .popular__info {
     width: 300px;
-    margin: 0 0 56px;
-  }
-
-  .popular__price {
-    font-size: $main-font-size + 3;
-    line-height: 24px;
-    margin: 0 0 34px 73px;
-    align-self: flex-start;
-  }
-
-  .popular__order {
-    width: 288px;
-  }
-
-  .popular__image {
-    width: 333px;
-    height: 404px;
-    margin: 0 0 0 -92px;
+    margin: -267px 0 56px;
     order: 2;
   }
 }
 @media (min-width: $desktop-width) {
   .popular {
-    height: 760px;
+    min-height: 760px;
     width: 1150px;
     background-image: url("../img/triple-set-desktop.jpg");
     background-repeat: no-repeat;

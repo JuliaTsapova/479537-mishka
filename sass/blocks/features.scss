@@ -5,7 +5,7 @@
   outline: 1px solid purple;
   // height: 830px;
   // height: 764px;
-  height: 810px;
+  min-height: 810px;
   width: 320px;
   // width: 264px;
   margin: 0 auto;
@@ -37,7 +37,7 @@
 @media (min-width: $tablet-width) {
   .features {
     width: 768px;
-    height: 576px;
+    min-height: 576px;
     padding: 63px 50px;
   }
 
@@ -63,7 +63,7 @@
   .features {
     width: 1150px;
     padding: 58px 225px;
-    height: 580px;
+    min-height: 580px;
   }
 
   .features__title {
