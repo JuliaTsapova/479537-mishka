@@ -1,0 +1,7 @@
+@media (min-width: $tablet-width) {
+  .reviews__bottom {
+    outline: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+  }
+}

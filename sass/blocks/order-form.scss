@@ -1,0 +1,266 @@
+.order-form {
+  outline: 1px solid orange;
+  padding: 22px 30px;
+  width: 320px;
+  margin: 0 auto 32px;
+}
+
+.order-form__fieldset {
+  padding: 0;
+}
+
+.order-form__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: 1px solid blue;
+  margin-bottom: 15px;
+
+  &--type {
+    height: 140px;
+  }
+
+  &--color {
+    height: 382px;
+  }
+
+  &--name {
+    height: 264px;
+  }
+
+  &--contacts {
+    outline: 1px solid red;
+    height: 214px;
+    margin-bottom: 36px;
+  }
+
+  &--additionally {
+    outline: 1px solid green;
+    flex-direction: column-reverse;
+    height: 184px;
+    margin-bottom: 16px;
+  }
+}
+
+.order-form__type-of-info {
+  color: #63d1bb;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.order-form__value-of-info {
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.order-form__bottom {
+  font-size: $main-font-size - 3;
+  font-weight: 400;
+  line-height: 16px;
+  color: #444444;
+  margin: 0 0 32px;
+}
+
+.order-form__input {
+  &--type {
+    display: none;
+  }
+
+  &--color {
+    display: none;
+  }
+}
+@media (min-width: $tablet-width) {
+  .order-form {
+    width: auto;
+    padding: 0;
+  }
+
+  .order-form__fieldset {
+    width: 768px;
+    border: none;
+    outline: 1px solid red;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+
+  .order-form__type-of-info {
+    margin: 0;
+    position: relative;
+    top: 34px;
+    // left: 50px;
+    &--color {
+      top: 66px;
+    }
+
+    &--name {
+      top: 68px;
+    }
+
+    &--phone {
+      position: static;
+      margin-right: 78px;
+    }
+
+    &--email {
+      position: static;
+    }
+
+    &--additionally {
+      top: 18px;
+      left: 0;
+    }
+  }
+
+  .order-form__value-of-info {
+    padding: 16px 0;
+    margin-bottom: 24px;
+    width: 218px;
+
+    &--type {
+      width: 230px;
+    }
+  }
+
+  .order-form__input {
+    &--name {
+      width: 280px;
+    }
+
+    &--contacts {
+      width: 501px;
+      margin-left: auto;
+      height: 75px;
+    }
+  }
+
+  .order-form__textarea {
+    width: 498px;
+    height: 138px;
+    border: 2px solid #000000;
+  }
+
+  .order-form__content-wrapper {
+    width: 501px;
+    margin: 0 0 26px auto;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    &--type {
+      height: 154px;
+      flex-direction: column;
+    }
+
+    &--color {
+      height: 228px;
+      margin-top: 32px;
+    }
+
+    &--name {
+      flex-direction: row;
+    }
+
+    &--contacts {
+      height: auto;
+      padding: 50px;
+      width: 768px;
+      margin-bottom: 52px;
+      flex-direction: row;
+    }
+
+    &--additionally {
+      height: auto;
+      width: 768px;
+      padding: 0 50px;
+      flex-direction: row-reverse;
+      margin-bottom: 54px;
+    }
+  }
+
+  .order-form__bottom-wrapper {
+    padding: 0 50px;
+    margin: 0 auto 50px;
+    width: 768px;
+    height: 52px;
+    outline: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .order-form__bottom {
+    width: 302px;
+    margin: 0;
+    font-size: $main-font-size;
+    line-height: 30px;
+    order: 1;
+  }
+
+  .order-form__send {
+    width: 226px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .order-form__fieldset {
+    width: 1150px;
+    padding: 0 50px;
+  }
+
+  .order-form__content-wrapper {
+    width: 700px;
+    margin-right: auto;
+
+    &--type {
+      margin-bottom: 24px;
+    }
+
+    &--color {
+      height: 152px;
+    }
+
+    &--name {
+      justify-content: flex-start;
+    }
+
+    &--contacts {
+      width: 1150px;
+      padding-left: 110px;
+      padding-right: 225px;
+    }
+
+    &--additionally {
+      width: 1150px;
+      margin-bottom: 46px;
+      padding-left: 110px;
+      padding-right: 225px;
+    }
+  }
+
+  .order-form__type-of-info {
+    left: 50px;
+
+    &--phone {
+      margin-right: 225px;
+    }
+
+    &--additionally {
+      top: 14px;
+      left: 13px;
+    }
+  }
+
+  .order-form__input {
+    &--name {
+      width: 450px;
+    }
+  }
+
+  .order-form__textarea {
+    width: 696px;
+  }
+
+  .order-form__bottom-wrapper {
+    padding: 0;
+    width: 700px;
+  }
+}

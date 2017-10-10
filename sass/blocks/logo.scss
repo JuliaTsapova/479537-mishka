@@ -1,0 +1,31 @@
+.logo {
+  height: 80px;
+  align-items: flex-start;
+  width: 320px;
+  // width: 320px;
+  // width: 86px;
+  // margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo__link {
+  width: 86px;
+  height: 80px;
+}
+@media (min-width: $tablet-width) {
+  .logo {
+    height: 88px;
+    margin: 0;
+    width: 160px;
+    justify-content: flex-start;
+    // order: -5;
+  }
+}
+@media (min-width: $desktop-width) {
+  .logo {
+    height: 88px;
+    margin: 0 75px;
+    // order: -5;
+  }
+}

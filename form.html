@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -11,79 +12,127 @@
 
 
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-    </a>
     <nav class="page-header__main-nav main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <ul class="main-nav__list">
-        <li class="main-nav__list-item"><a class="main-nav__list-link" href="catalog.html">Каталог товаров</a></li>
-        <li class="main-nav__list-item"><a class="main-nav__list-link" href="form.html">Вязание на заказ</a></li>
-        <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Поиск по сайту</a></li>
-        <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Корзина: пока пуста</a></li>
+
+      <ul class="main-nav__menu main-list  main-list--closed">
+
+        <li class="logo">
+          <a class="logo__link" href="index.html">
+        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+        </li>
+
+        <li class="main-list__item main-list__item--catalog">
+          <a class="main-list__link main-list__link--catalog" href="catalog.html">Каталог товаров</a>
+        </li>
+
+        <li class="main-list__item main-list__item--order">
+          <a class="main-list__link main-list__link--order" href="form.html">Вязание на заказ</a>
+        </li>
+
+        <li class="main-list__item main-list__item--search main-list__item--user">
+          <form class="main-list__form" action="https://echo.htmlacademy.ru" method="get">
+            <!-- <label class="visually-hidden" for="search"></label> -->
+            <input class="main-list__search" id="search" type="search" name="search" placeholder="Поиск по сайту">
+          </form>
+        </li>
+
+        <li class="main-list__item main-list__item--mobile main-list__item--basket main-list__item--user">
+          <a class="main-list__link" href="#">Корзина: пока пуста</a>
+        </li>
+
+        <li class="main-list__item main-list__item--new">
+          <a class="main-list__link" href="#">Новые поступления</a>
+        </li>
+
+        <li class="main-list__item main-list__item--sale">
+          <a class="main-list__link" href="#">Распродажа</a>
+        </li>
+
+        <li class="main-list__item main-list__item--delivery">
+          <a class="main-list__link main-list__link--delivery">Бесплатная доставка по России</a>
+        </li>
+
       </ul>
     </nav>
   </header>
 
 
   <main class="page-main">
-    <h1 class="main-title">Вязание на заказ</h1>
+    <header class="title-wrapper title-wrapper--form-page">
+      <h1 class="title-wrapper__main title-wrapper__main--form-page">Вязание на заказ</h1>
+    </header>
     <p class="form-title">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset>
+      <fieldset class="order-form__fieldset">
         <legend class="order-form__type-of-info">Тип</legend>
-        <div class="order-form__content-wrapper">
-          <input type="radio" name="type" value="accessory" id="accessory" checked>
-          <label class="order-form__value-of-info" for="accessory">Аксессуар для интерьера</label>
-          <input type="radio" name="type" value="toy" id="toy">
-          <label class="order-form__value-of-info" for="toy">Детская игрушка</label>
+        <div class="order-form__content-wrapper order-form__content-wrapper--type">
+          <input class="order-form__input--type" type="radio" name="type" value="accessory" id="accessory" checked>
+          <label class="order-form__value-of-info order-form__value-of-info--type" for="accessory">Аксессуар для интерьера</label>
+          <input class="order-form__input--type" type="radio" name="type" value="toy" id="toy">
+          <label class="order-form__value-of-info order-form__value-of-info--type" for="toy">Детская игрушка</label>
         </div>
       </fieldset>
-      <fieldset>
-        <legend class="order-form__type-of-info">Цвет</legend>
-        <div class="order-form__content-wrapper">
-          <input type="checkbox" name="white" value="white" id="white" checked>
-          <label class="order-form__value-of-info" for="white">Белый</label>
-          <input type="checkbox" name="gray" value="gray" id="gray" checked>
-          <label class="order-form__value-of-info" for="gray">Серый</label>
-          <input type="checkbox" name="tiffany" value="tiffany" id="tiffany">
-          <label class="order-form__value-of-info" for="tiffany">«Тиффани»</label>
-          <input type="checkbox" name="black" value="black" id="black">
-          <label class="order-form__value-of-info" for="black">Черный</label>
-          <input type="checkbox" name="pink" value="pink" id="pink">
-          <label class="order-form__value-of-info" for="pink">Розовый</label>
-          <input type="checkbox" name="orange" value="orange" id="orange">
-          <label class="order-form__value-of-info" for="orange">Оранжевый</label>
-        </div>
-      </fieldset>
-      <fieldset>
-        <legend class="order-form__type-of-info">ФИО</legend>
-        <div class="order-form__content-wrapper">
-          <input type="text" name="name" value="name" id="name" placeholder="Введите ваше имя*" required>
+      <div class="color-wrapper">
+        <fieldset class="order-form__fieldset">
+          <legend class="order-form__type-of-info order-form__type-of-info--color">Цвет</legend>
+          <div class="order-form__content-wrapper order-form__content-wrapper--color">
+            <input class="order-form__input--color" type="checkbox" name="white" value="white" id="white" checked>
+            <label class="order-form__value-of-info" for="white">Белый</label>
+            <input class="order-form__input--color" type="checkbox" name="gray" value="gray" id="gray" checked>
+            <label class="order-form__value-of-info" for="gray">Серый</label>
+            <input class="order-form__input--color" type="checkbox" name="tiffany" value="tiffany" id="tiffany">
+            <label class="order-form__value-of-info" for="tiffany">«Тиффани»</label>
+            <input class="order-form__input--color" type="checkbox" name="black" value="black" id="black">
+            <label class="order-form__value-of-info" for="black">Черный</label>
+            <input class="order-form__input--color" type="checkbox" name="pink" value="pink" id="pink">
+            <label class="order-form__value-of-info" for="pink">Розовый</label>
+            <input class="order-form__input--color" type="checkbox" name="orange" value="orange" id="orange">
+            <label class="order-form__value-of-info" for="orange">Оранжевый</label>
+          </div>
+        </fieldset>
+      </div>
+      <fieldset class="order-form__fieldset">
+        <legend class="order-form__type-of-info order-form__type-of-info--name">ФИО</legend>
+        <div class="order-form__content-wrapper order-form__content-wrapper--name">
           <label class="order-form__value-of-info" for="name">Имя:</label>
-          <input type="text" name="surname" value="surname" id="surname" placeholder="Укажите фамилию*" required>
+          <input class="order-form__input--name" type="text" name="name" value="name" id="name" placeholder="Введите ваше имя*" required>
           <label class="order-form__value-of-info" for="surname">Фамилия:</label>
-          <input type="text" name="patronymic" value="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+          <input class="order-form__input--name" type="text" name="surname" value="surname" id="surname" placeholder="Укажите фамилию*" required>
           <label class="order-form__value-of-info" for="patronymic">Отчество:</label>
+          <input class="order-form__input--name" type="text" name="patronymic" value="patronymic" id="patronymic" placeholder="Отчество, если желаете">
         </div>
       </fieldset>
-      <input type="tel" name="phone" value="phone" id="phone" placeholder="+7 XXX XX XX*" required>
-      <label class="order-form__type-of-info" for="phone">Тел</label>
-      <input type="email" name="email" value="email" id="email" placeholder="Ваш Email*" required>
-      <label class="order-form__type-of-info" for="email">E-mail</label>
-      <textarea name="additionally" id="additionally" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-      <label class="order-form__type-of-info" for="additionally">Доп</label>
-      <p class="order-form__bottom">*Поля обязательны для заполнения</p>
-      <a class="order-form__send button" href="#">Отправить заказ</a>
+      <div class="color-wrapper">
+        <div class="order-form__content-wrapper order-form__content-wrapper--contacts">
+          <label class="order-form__type-of-info order-form__type-of-info--phone" for="phone">Тел</label>
+          <input class="order-form__input--contacts" type="tel" name="phone" value="phone" id="phone" placeholder="+7 XXX XX XX*" required>
+          <label class="order-form__type-of-info order-form__type-of-info--email" for="email">E-mail</label>
+          <input class="order-form__input--contacts" type="email" name="email" value="email" id="email" placeholder="Ваш Email*" required>
+        </div>
+      </div>
+      <div class="order-form__content-wrapper order-form__content-wrapper--additionally">
+        <textarea class="order-form__textarea" name="additionally" id="additionally" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <label class="order-form__type-of-info order-form__type-of-info--additionally" for="additionally">Доп</label>
+      </div>
+      <div class="order-form__bottom-wrapper">
+        <p class="order-form__bottom">*Поля обязательны для заполнения</p>
+        <a class="order-form__send button" href="#">Отправить заказ</a>
+      </div>
     </form>
   </main>
   <footer class="page-footer">
-    <ul class="page-footer__social social-list">
-      <li class="social-list__item social-list__item--instagram"><a class="social-list__link" href="#">Instagram</a></li>
-      <li class="social-list__item social-list__item--facebook"><a class="social-list__link" href="#">Facebook</a></li>
-      <li class="social-list__item social-list__item--twitter"><a class="social-list__link" href="#">Twitter</a></li>
-    </ul>
-    <p class="page-footer__copyright">Разработано<img class="page-footer__copyright-logo" src="../img/logo-htmlacademy.svg" width="30" height="32" alt="HTML Academy"></p>
+    <div class="page-footer__wrapper">
+      <p class="page-footer__mishka">MISHKA</P>
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item social-list__item--instagram"><a class="social-list__link" href="#">IG</a></li>
+        <li class="social-list__item social-list__item--facebook"><a class="social-list__link" href="#">FB</a></li>
+        <li class="social-list__item social-list__item--twitter"><a class="social-list__link" href="#">TW</a></li>
+      </ul>
+      <p class="page-footer__copyright">Разработано<img class="page-footer__copyright-logo" src="img/logo-htmlacademy.svg" width="30" height="32" alt="HTML Academy"></p>
+    </div>
   </footer>
 </body>
 

@@ -1,0 +1,13 @@
+.main-nav {
+  line-height: 24px;
+  color: $main-color;
+  outline: 1px solid blue;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.main-nav__menu {
+  order: -2;
+}
