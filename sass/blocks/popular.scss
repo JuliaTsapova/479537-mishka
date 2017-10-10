@@ -123,6 +123,8 @@
     font-size: $main-font-size + 36;
     line-height: 57px;
     margin-top: 82px;
+    width: 870px;
+
   }
 
   .popular__image {
@@ -131,14 +133,33 @@
 
   .popular__title {
     order: -1;
-    margin: 94px 24px 600px 18px;
+    margin: 94px 24px 0px 18px;
   }
 
   .popular__description {
     margin-bottom: 46px;
+    margin-left: 170px;
+    padding-right: 580px;
+    width: 870px;
   }
 
   .popular__info {
     margin-bottom: 106px;
+    margin-top: 0;
+    margin-left: 170px;
+    padding-right: 580px;
+    width: 870px;
+    order: 0;
+  }
+
+  .popular__price {
+    margin-left: 170px;
+    padding-right: 580px;
+    width: 870px;
+    text-align: center;
+  }
+
+  .popular__order {
+    margin-left: 170px;
   }
 }
