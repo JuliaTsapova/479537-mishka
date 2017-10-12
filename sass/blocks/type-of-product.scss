@@ -33,6 +33,7 @@
   outline: 1px solid green;
   background-color: #f9f9f9;
 }
+
 @media (min-width: $tablet-width) {
   .type-of-product {
     flex-direction: row;
@@ -49,6 +50,7 @@
     margin: 0 auto;
   }
 }
+
 @media (min-width: $desktop-width) {
   .type-of-product {
     width: 1050px;

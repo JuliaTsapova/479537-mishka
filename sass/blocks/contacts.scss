@@ -55,6 +55,7 @@
 .contacts__write {
   margin: 0 auto;
 }
+
 @media (min-width: $tablet-width) {
   .contacts {
     width: 768px;
@@ -105,6 +106,7 @@
     width: 228px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .contacts {
     padding: 0 50px;

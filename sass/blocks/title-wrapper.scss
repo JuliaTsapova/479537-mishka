@@ -33,6 +33,7 @@
     width: 320px;
   }
 }
+
 @media (min-width: $tablet-width) {
   .title-wrapper {
     width: auto;
@@ -41,16 +42,13 @@
 
     &--main-page {
       margin: 0;
+      background-image: url("../img/hero-desktop.jpg");
+      height: 630px;
     }
 
     &--form-page {
       margin-bottom: 72px;
     }
-  }
-
-  .title-wrapper--main-page {
-    background-image: url("../img/hero-desktop.jpg");
-    height: 630px;
   }
 
   .title-wrapper__main {
@@ -59,6 +57,7 @@
     width: 496px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .title-wrapper {
     width: auto;

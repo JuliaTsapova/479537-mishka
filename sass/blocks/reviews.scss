@@ -47,6 +47,7 @@
 .reviews__toggles {
   margin: 0 auto 52px;
 }
+
 @media (min-width: $tablet-width) {
   .reviews__wrapper {
     width: 768px;
@@ -89,6 +90,7 @@
     order: -1;
   }
 }
+
 @media (min-width: $desktop-width) {
   .reviews__wrapper {
     width: 1150px;
