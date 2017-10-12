@@ -73,6 +73,7 @@
   align-self: center;
   margin: 0 0 26px;
 }
+
 @media (min-width: $tablet-width) {
   .popular {
     min-height: 600px;
@@ -131,6 +132,7 @@
     width: 100%;
   }
 }
+
 @media (min-width: $desktop-width) {
   .popular {
     min-height: 760px;

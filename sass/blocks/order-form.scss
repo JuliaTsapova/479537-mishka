@@ -71,6 +71,7 @@
     display: none;
   }
 }
+
 @media (min-width: $tablet-width) {
   .order-form {
     width: auto;
@@ -200,6 +201,7 @@
     width: 226px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .order-form__fieldset {
     width: 1150px;

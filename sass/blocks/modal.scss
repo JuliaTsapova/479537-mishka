@@ -2,10 +2,9 @@
   display: block;
   padding: 0 30px;
   outline: 1px solid pink;
-  @include visually-hidden;
 }
 
-.modal__title{
+.modal__title {
   font-weight: 700;
   font-size: $main-font-size + 8;
   line-height: 30px;

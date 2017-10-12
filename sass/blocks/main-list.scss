@@ -32,8 +32,6 @@
   }
 }
 
-
-
 .main-list__link {
   text-decoration: none;
   font-size: $main-font-size;
@@ -41,6 +39,7 @@
   font-weight: 700;
   color: $main-color;
 }
+
 @media (min-width: $tablet-width) {
   .main-list {
     width: 768px;
@@ -99,6 +98,7 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .main-list {
     width: 1150px;
