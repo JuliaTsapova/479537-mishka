@@ -1,5 +1,5 @@
 .title-wrapper {
-  outline: 1px solid pink;
+  // outline: 1px solid pink;
   display: block;
   height: 177px;
   width: auto;
@@ -7,7 +7,7 @@
   background-color: #f1f1f1;
 
   &--main-page {
-    height: 283px;
+    height: 278px;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% -17px;
@@ -23,27 +23,28 @@
   font-size: $main-font-size + 10;
   line-height: 30px;
   font-weight: 700;
-  width: 244px;
+  // width: 244px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 70px;
+  padding: 70px 30px 0;
 
   &--form-page {
     margin: 0 auto;
-    width: 320px;
+    // width: 320px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .title-wrapper {
     width: auto;
-    height: 225px;
+    min-height: 224px;
     margin-bottom: 80px;
 
     &--main-page {
       margin: 0;
       background-image: url("../img/hero-desktop.jpg");
-      height: 630px;
+      background-position: 50% -2px;
+      min-height: 624px;
     }
 
     &--form-page {
@@ -54,7 +55,12 @@
   .title-wrapper__main {
     font-size: $main-font-size + 26;
     line-height: 50px;
-    width: 496px;
+    width: 500px;
+    padding: 91px 0 0;
+    // padding: 152px 0 0 0;
+    &--main-page {
+      padding-top: 152px;
+    }
   }
 }
 
@@ -62,7 +68,8 @@
   .title-wrapper {
     width: auto;
     height: 250px;
-    margin-bottom: 134px;
+    // margin-bottom: 134px;
+    margin-bottom: 130px;
 
     &--main-page {
       margin: 0;
@@ -70,13 +77,13 @@
     }
 
     &--form-page {
-      margin-bottom: 126px;
+      margin-bottom: 124px;
     }
   }
 
   .title-wrapper__main {
     font-size: $main-font-size + 36;
     line-height: 57px;
-    width: 606px;
+    width: 700px;
   }
 }

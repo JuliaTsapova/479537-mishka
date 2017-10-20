@@ -1,7 +1,7 @@
 .main-nav {
   line-height: 24px;
   color: $main-color;
-  outline: 1px solid blue;
+  // outline: 1px solid blue;
   font-weight: 700;
   display: flex;
   justify-content: flex-end;
@@ -10,4 +10,60 @@
 
 .main-nav__menu {
   order: -2;
+}
+
+.main-nav__toggle {
+  display: block;
+  width: 22px;
+  height: 20px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-color: #ffffff;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+// .main-nav--closed .main-nav__toggle:active::before {
+//   background-color: rgba(255, 255, 255, 0.3);
+//   box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+// }
+
+.main-nav--opened .main-nav__toggle {
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 21px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+  // &:active::before,
+  // &:active::after {
+  //   background-color: rgba(255, 255, 255, 0.3);
+  // }
 }
