@@ -45,7 +45,7 @@
   &--contacts {
     // outline: 1px solid red;
     height: 214px;
-    margin-bottom: 36px;
+    // margin-bottom: 36px;
     justify-content: flex-start;
     margin-bottom: 0;
     position: relative;
@@ -227,16 +227,26 @@
   }
 
   .order-form__content-wrapper {
+    width: 501px;
+    margin: 0 0 26px auto;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
     &--type {
+      height: 154px;
+      flex-direction: column;
       padding: 0 145px 4px 80px;
     }
 
     &--color {
+      height: 228px;
+      margin-top: 32px;
       flex-direction: row;
       padding: 0 0 2px 80px;
     }
 
     &--name {
+      flex-direction: row;
       height: 264px;
       padding-top: 34px;
     }
@@ -250,8 +260,21 @@
     }
 
     &--contacts {
-      padding-top: 25px;
+      height: auto;
+      padding: 25px 50px 50px;
+      width: 768px;
+      margin: 0 auto 48px;
+      flex-direction: row;
+      // padding-top: 25px;
       min-height: 228px;
+    }
+
+    &--additionally {
+      height: auto;
+      width: 768px;
+      padding: 0 50px;
+      flex-direction: row-reverse;
+      margin: 0 auto 54px;
     }
   }
 
@@ -373,43 +396,6 @@
     }
   }
 
-  .order-form__content-wrapper {
-    width: 501px;
-    margin: 0 0 26px auto;
-    align-items: flex-start;
-    flex-wrap: wrap;
-
-    &--type {
-      height: 154px;
-      flex-direction: column;
-    }
-
-    &--color {
-      height: 228px;
-      margin-top: 32px;
-    }
-
-    &--name {
-      flex-direction: row;
-    }
-
-    &--contacts {
-      height: auto;
-      padding: 25px 50px 50px;
-      width: 768px;
-      margin: 0 auto 48px;
-      flex-direction: row;
-    }
-
-    &--additionally {
-      height: auto;
-      width: 768px;
-      padding: 0 50px;
-      flex-direction: row-reverse;
-      margin: 0 auto 54px;
-    }
-  }
-
   .order-form__bottom-wrapper {
     padding: 0 50px;
     margin: 0 auto 50px;
@@ -497,6 +483,12 @@
   .order-form__input {
     &--name {
       width: 450px;
+      width: 573px;
+      margin-top: 2px;
+    }
+
+    &--name:first-of-type {
+      width: 626px;
     }
 
     &--contacts {
@@ -508,17 +500,6 @@
     &--color {
       width: 162px;
       margin-right: 14px;
-    }
-  }
-
-  .order-form__input {
-    &--name {
-      width: 573px;
-      margin-top: 2px;
-    }
-
-    &--name:first-of-type {
-      width: 626px;
     }
   }
 
