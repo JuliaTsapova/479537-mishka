@@ -3,20 +3,28 @@
   align-items: flex-start;
   width: 320px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+  padding-top: 22px;
 }
 
 .logo__link {
   width: 86px;
-  height: 80px;
+  height: 40px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .logo {
-    height: 88px;
-    margin: 0;
+    height: 90px;
+    margin: 0 0 16px;
     width: 160px;
     justify-content: flex-start;
+    border: none;
   }
 }
 
