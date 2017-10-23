@@ -40,6 +40,11 @@
   margin-top: -6px;
 }
 
+.product-card__description {
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+}
+
 .product-card__info {
   font-size: $main-font-size - 4;
   line-height: 30px;
