@@ -1,8 +1,8 @@
 .features {
   font-weight: 700;
   line-height: 20px;
-  padding: 33px 28px;
-  outline: 1px solid purple;
+  padding: 33px 30px 20px;
+  // outline: 1px solid purple;
   min-height: 810px;
   width: 320px;
   margin: 0 auto;
@@ -17,24 +17,75 @@
 .features__list {
   list-style: none;
   padding: 0;
-  margin: 30px 0 0;
+  margin: 32px 0 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  height: 710px;
+  // height: 710px;
+}
+
+.features__list-item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-height: 342px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  // justify-content: space-between;
+  &--part1 {
+    padding-right: 55px;
+  }
+
+  &--part2 {
+    padding-right: 10px;
+  }
 }
 
 .features__item {
-  outline: 1px solid lightgray;
-  flex-basis: 94px;
+  // outline: 1px solid lightgray;
+  flex-basis: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &--eco {
+    flex-basis: 93px;
+    margin-bottom: 30px;
+    padding-right: 10px;
+  }
+
+  &--style {
+    flex-basis: 93px;
+    margin-bottom: 35px;
+  }
+
+  &--like {
+    flex-basis: 88px;
+    margin-bottom: 33px;
+  }
+
+  &--love {
+    flex-basis: 89px;
+    margin-bottom: 35px;
+  }
+
+  &--support {
+    flex-basis: 89px;
+    margin-bottom: 31px;
+  }
+
+  &--gift {
+    flex-basis: 92px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .features {
     width: 768px;
     min-height: 576px;
-    padding: 63px 50px;
+    padding: 60px 45px 50px;
   }
 
   .features__title {
@@ -43,23 +94,53 @@
   }
 
   .features__list {
-    margin-top: 48px;
-    height: 410px;
+    margin-top: 42px;
+    padding: 0 6px;
+    // height: 410px;
     align-content: flex-start;
+    flex-direction: row;
+  }
+
+  .features__list-item {
+    width: 333px;
+
+    &--part1 {
+      padding-right: 98px;
+    }
+
+    &--part2 {
+      padding-right: 38px;
+    }
   }
 
   .features__item {
-    width: 325px;
+    width: auto;
     font-size: $main-font-size + 3;
     line-height: 22px;
     flex-basis: 104px;
+
+    &--eco {
+      margin-bottom: 51px;
+    }
+
+    &--style {
+      margin-bottom: 51px;
+    }
+
+    &--love {
+      margin-bottom: 51px;
+    }
+
+    &--support {
+      margin-bottom: 51px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .features {
     width: 1150px;
-    padding: 58px 225px;
+    padding: 60px 220px;
     min-height: 580px;
   }
 
@@ -70,5 +151,17 @@
 
   .features__list {
     align-content: stretch;
+  }
+
+  .features__list-item {
+    width: 348px;
+
+    &--part1 {
+      padding-right: 113px;
+    }
+
+    &--part2 {
+      padding-right: 53px;
+    }
   }
 }

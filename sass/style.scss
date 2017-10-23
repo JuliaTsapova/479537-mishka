@@ -4,6 +4,8 @@ $main-color: #000000;
 $additional-color: rgba(68, 68, 68, 1);
 $tablet-width: 768px;
 $desktop-width: 1150px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
 @font-face {
   font-family: "OpenSans";
@@ -33,6 +35,24 @@ body {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -58,6 +78,7 @@ body {
 @import "blocks/features.scss";
 @import "blocks/reviews.scss";
 @import "blocks/reviews__bottom.scss";
+@import "blocks/slider-toggles.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social-list.scss";
