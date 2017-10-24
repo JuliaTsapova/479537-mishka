@@ -42,6 +42,19 @@
 .contacts__info-column {
   // outline: 1px solid green;
   vertical-align: top;
+// conflict
+//   &:first-child {
+//     width: 50px;
+//   }
+
+//   &:nth-child(2) {
+//     padding-left: 28px;
+//   }
+// }
+
+// .contacts__info-row--address .contacts__info-column:nth-child(2) {
+//   padding-right: 60px;
+// }
 
   &:first-child {
     width: 50px;
@@ -130,6 +143,16 @@
     height: 135px;
     vertical-align: top;
     padding-top: 23px;
+// conflict
+//     &:first-child {
+//       width: 69px;
+//     }
+
+//     &:nth-child(2) {
+//       padding: 24px 0 0;
+//       width: 260px;
+//     }
+//   }
 
     &:first-child {
       width: 69px;
