@@ -64,6 +64,11 @@
     flex-direction: row;
     width: 768px;
     padding: 0 50px;
+    // background-image: url("../img/bg-zigzag-fill.svg");
+    // background-repeat: repeat-x;
+    // background-position-x: 50%;
+    // background-position-y: 101%;
+    // background-size: 100% auto;
   }
 
   .type-of-product__link {
@@ -91,6 +96,11 @@
   .type-of-product__wrapper {
     width: auto;
     margin: 0 auto;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position-x: 50%;
+    background-position-y: 101%;
+    background-size: 100% auto;
   }
 }
 

@@ -14,8 +14,11 @@
       <ul class="main-nav__menu main-list  main-list--closed">
         <li class="logo">
           <a class="logo__link" href="index.html">
-        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-        </a>
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+            </picture>        </a>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </li>
         <li class="main-list__item main-list__item--catalog">

@@ -147,8 +147,8 @@
     position: absolute;
     top: 152px;
     right: 50px;
-    width: 334px;
-    height: 404px;
+    // width: 334px;
+    // height: 404px;
   }
 
   .popular__price {
@@ -168,9 +168,9 @@
   .popular {
     min-height: 805px;
     width: 1150px;
-    background-image: url("../img/triple-set-desktop.jpg");
-    background-repeat: no-repeat;
-    background-position: 573px 74px;
+    // background-image: url("../img/triple-set-desktop.jpg");
+    // background-repeat: no-repeat;
+    // background-position: 573px 74px;
     align-content: flex-start;
   }
 
@@ -183,8 +183,8 @@
   }
 
   .popular__image {
-    display: none;
-    //@include visually-hidden;
+    top: 76px;
+    z-index: -1;
   }
 
   .popular__title {

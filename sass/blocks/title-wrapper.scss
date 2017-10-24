@@ -10,8 +10,13 @@
     height: 278px;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 50% -17px;
+    background-position: 50% -19px;
     background-color: #f9f9f9;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+      background-size: 575px auto;
+    }
   }
 
   &--form-page {
@@ -38,13 +43,25 @@
   .title-wrapper {
     width: auto;
     min-height: 224px;
-    margin-bottom: 80px;
+    // margin-bottom: 80px;
+    margin-bottom: 77px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position-x: 50%;
+    background-position-y: 101%;
+    background-size: 100% auto;
 
     &--main-page {
       margin: 0;
-      background-image: url("../img/hero-desktop.jpg");
+      background-image: url("../img/hero-tablet@1x.jpg");
       background-position: 50% -2px;
+      background-size: 1150px auto;
       min-height: 624px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/hero-tablet@2x.jpg");
+        // background-size: 1150px auto;
+      }
     }
 
     &--form-page {
@@ -74,6 +91,11 @@
     &--main-page {
       margin: 0;
       height: 626px;
+      background-image: url("../img/hero-desktop@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/hero-desktop@2x.jpg");
+      }
     }
 
     &--form-page {

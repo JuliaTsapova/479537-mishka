@@ -4,6 +4,8 @@ $main-color: #000000;
 $additional-color: rgba(68, 68, 68, 1);
 $tablet-width: 768px;
 $desktop-width: 1150px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
 @font-face {
   font-family: "OpenSans";
@@ -31,6 +33,11 @@ body {
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 @mixin visually-hidden {
