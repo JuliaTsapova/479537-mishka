@@ -42,20 +42,21 @@
 @media (min-width: $tablet-width) {
   .title-wrapper {
     width: auto;
-    min-height: 224px;
+    min-height: 232px;
     // margin-bottom: 80px;
-    margin-bottom: 77px;
+    margin-bottom: 69px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-position-x: 50%;
     background-position-y: 101%;
-    background-size: 100% auto;
+    background-size: 103% auto;
 
     &--main-page {
       margin: 0;
       background-image: url("../img/hero-tablet@1x.jpg");
       background-position: 50% -2px;
       background-size: 1150px auto;
+      background-repeat: no-repeat;
       min-height: 624px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -65,7 +66,7 @@
     }
 
     &--form-page {
-      margin-bottom: 72px;
+      margin-bottom: 64px;
     }
   }
 
@@ -84,9 +85,9 @@
 @media (min-width: $desktop-width) {
   .title-wrapper {
     width: auto;
-    height: 250px;
+    min-height: 268px;
     // margin-bottom: 134px;
-    margin-bottom: 130px;
+    margin-bottom: 112px;
 
     &--main-page {
       margin: 0;
@@ -99,7 +100,7 @@
     }
 
     &--form-page {
-      margin-bottom: 124px;
+      margin-bottom: 106px;
     }
   }
 

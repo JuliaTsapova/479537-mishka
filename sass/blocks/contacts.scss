@@ -70,7 +70,7 @@
 }
 
 .contacts__map {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   //
   // &--tablet {
   //   display: none;
@@ -83,13 +83,19 @@
 
 .contacts__write {
   margin: 0 auto;
+  font-size: $main-font-size + 1;
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
     width: 768px;
     // height: 875px;
-    margin-bottom: 60px;
+    padding-top: 16px;
+    margin-bottom: 58px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   .contacts__info {
@@ -165,7 +171,7 @@
   }
 
   .contacts__map {
-    margin-bottom: 54px;
+    margin-bottom: 46px;
     //
     // &--mobile {
     //   display: none;
@@ -183,10 +189,10 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding: 0 50px;
+    padding: 20px 50px 0 50px;
     width: 1150px;
     min-height: 546px;
-    margin-bottom: 90px;
+    margin-bottom: 104px;
     flex-direction: row;
     justify-content: flex-start;
     // align-content: space-between;
@@ -253,7 +259,7 @@
     //   display: block;
     // }
     position: absolute;
-    top: 74px;
+    top: 94px;
     // margin: 74px 0 0;
     // order: 1;
     right: 50px;

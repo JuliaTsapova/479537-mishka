@@ -163,6 +163,7 @@
   .main-list {
     width: 1150px;
     padding: 0 50px;
+    align-content: flex-start;
   }
 
   .main-list__item {
@@ -185,7 +186,7 @@
     &--order {
       width: 200px;
       order: -2;
-      padding: 32px 0 32px 32px;
+      padding: 32px 0 32px 34px;
       margin-bottom: 18px;
       margin-top: 0;
     }
