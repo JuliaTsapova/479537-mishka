@@ -165,7 +165,7 @@
     }
 
     &:nth-child(2) {
-      padding: 24px 0 0;
+      padding: 24px 0 0 5px;
       width: 260px;
     }
   }
@@ -184,6 +184,7 @@
 
   .contacts__write {
     width: 230px;
+    font-size: $main-font-size;
   }
 }
 
@@ -242,7 +243,7 @@
 
   .contacts__info-column:nth-child(2) {
     padding-top: 0;
-    padding-left: 26px;
+    padding-left: 23px;
     width: 217px;
   }
 
