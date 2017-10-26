@@ -158,11 +158,15 @@
     top: -12px;
   }
 
-  &--type:hover::before, &--color:hover::before, &--type:focus::before, &--color:focus::before {
+  &--color:focus::before,
+  &--color:hover::before,
+  &--type:focus::before,
+  &--type:hover::before {
     border-color: #62d1ba;
   }
 
-  &--type:active::before, &--color:active::before {
+  &--color:active::before,
+  &--type:active::before {
     border-color: #c7c7c7;
   }
 }
@@ -180,15 +184,15 @@
     @include visually-hidden;
   }
 
-  &--type:checked+label::before {
-    box-shadow: inset 0px 0px 0px 13px #ffffff, inset 0px 0 0 25px #62d1ba;
+  &--type:checked + label::before {
+    box-shadow: inset 0 0 0 13px #ffffff, inset 0 0 0 25px #62d1ba;
   }
 
   &--color {
     @include visually-hidden;
   }
 
-  &--color:checked+label::before {
+  &--color:checked + label::before {
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -218,7 +222,10 @@
     position: relative;
   }
 
-  &--name:hover, &--contacts:hover, &--name:focus, &--contacts:focus {
+  &--contacts:focus,
+  &--contacts:hover,
+  &--name:focus,
+  &--name:hover {
     border-bottom-color: #62d1ba;
   }
 }
@@ -235,7 +242,8 @@
     padding: 14px 0 0 18px;
   }
 
-  &:hover, &:focus {
+  &:focus,
+  &:hover {
     border-color: #62d1ba;
   }
 }
