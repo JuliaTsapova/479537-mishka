@@ -1,7 +1,27 @@
+
+.modal__wrapper {
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  opacity: 0.5;
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  z-index: 1
+}
+
 .modal {
-  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50%;
+  margin-left: -50%;
+  display: none;
   padding: 0 30px;
   outline: 1px solid pink;
+  z-index: 2;
+  opacity: 1;
 }
 
 .modal__title {

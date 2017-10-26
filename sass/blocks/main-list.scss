@@ -15,8 +15,8 @@
 
 .main-list__item {
   width: 320px;
-  display: none;
-  padding: 28px 0 28px 75px;
+  // display: none;
+  padding: 26px 0 28px 75px;
   // outline: 1px solid purple;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
@@ -29,8 +29,8 @@
     height: 18px;
     position: absolute;
     background-image: url("../../img/icon-search.svg");
-    left: 32px;
-    top: 32px;
+    left: 30px;
+    top: 30px;
   }
 
   &--basket::after {
@@ -40,8 +40,8 @@
     height: 19px;
     position: absolute;
     background-image: url("../../img/icon-cart.svg");
-    left: 32px;
-    top: 32px;
+    left: 30px;
+    top: 30px;
   }
 
   &--new {

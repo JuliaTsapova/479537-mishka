@@ -1,3 +1,5 @@
+//box-shadow: inset 0px 0px 0px 13px white, inset 0px 0 0 25px blue;
+
 .order-form {
   // outline: 1px solid orange;
   padding: 24px 28px;
@@ -155,6 +157,14 @@
     left: -62px;
     top: -12px;
   }
+
+  &--type:hover::before, &--color:hover::before, &--type:focus::before, &--color:focus::before {
+    border-color: #62d1ba;
+  }
+
+  &--type:active::before, &--color:active::before {
+    border-color: #c7c7c7;
+  }
 }
 
 .order-form__bottom {
@@ -167,11 +177,21 @@
 
 .order-form__input {
   &--type {
-    display: none;
+    @include visually-hidden;
+  }
+
+  &--type:checked+label::before {
+    box-shadow: inset 0px 0px 0px 13px #ffffff, inset 0px 0 0 25px #62d1ba;
   }
 
   &--color {
-    display: none;
+    @include visually-hidden;
+  }
+
+  &--color:checked+label::before {
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &--name {
@@ -185,7 +205,7 @@
   &--name[placeholder] {
     font-size: $main-font-size;
     line-height: 18px;
-    color: rgba(68, 68, 68, 0.3);
+    color: rgba(68, 68, 68, .3);
     letter-spacing: 0.02em;
     padding-left: 2px;
   }
@@ -196,6 +216,10 @@
     border-bottom: 2px solid #000000; // outline: 1px dotted green;
     margin-bottom: 30px;
     position: relative;
+  }
+
+  &--name:hover, &--contacts:hover, &--name:focus, &--contacts:focus {
+    border-bottom-color: #62d1ba;
   }
 }
 
@@ -209,6 +233,10 @@
     color: rgba(68, 68, 68, 0.3);
     letter-spacing: 0.02em;
     padding: 14px 0 0 18px;
+  }
+
+  &:hover, &:focus {
+    border-color: #62d1ba;
   }
 }
 
