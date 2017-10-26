@@ -88,7 +88,7 @@
     width: 768px;
     min-height: 576px;
     padding: 50px 55px 50px 45px;
-    }
+  }
 
   .features__title {
     font-size: $main-font-size + 26;
@@ -120,12 +120,12 @@
     }
 
     &--like {
-          padding: 12px 86px 0 0;
+      padding: 12px 86px 0 0;
       order: 4;
     }
 
     &--style {
-          padding: 8px 64px 0 0;
+      padding: 8px 64px 0 0;
       margin-bottom: 51px;
       order: 2;
     }
@@ -137,13 +137,13 @@
     }
 
     &--support {
-          padding: 11px 0px 0 6px;
+      padding: 11px 0px 0 6px;
       margin-bottom: 51px;
       order: 3;
     }
 
     &--gift {
-          padding: 8px 28px 0 6px;
+      padding: 8px 28px 0 6px;
       order: 5;
     }
   }
@@ -164,7 +164,6 @@
   .features__list {
     // align-content: stretch;
     justify-content: space-between;
-
   }
 
   // .features__list-item {

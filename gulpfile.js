@@ -28,48 +28,54 @@ gulp.task("style", function() {
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"));
-    // .pipe(server.stream());
+  // .pipe(server.stream());
 });
 
 gulp.task("sprite", function() {
   return gulp.src("img/icon-*.svg")
-  .pipe(svgstore({
-    inlineSvg: true
-  }))
-  .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"));
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("html", function() {
   return gulp.src("*.html")
-  .pipe(posthtml([
-    include()
-  ]))
-  .pipe(gulp.dest("build"));
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("jsmin", function() {
   return gulp.src("js/*.js")
-  .pipe(gulp.dest("build/js"))
-  .pipe(jsmin())
-  .pipe(rename("*.min.js"))
-  .pipe(gulp.dest("build/js"));
+    .pipe(gulp.dest("build/js"))
+    .pipe(jsmin())
+    .pipe(rename("*.min.js"))
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("images", function() {
   return gulp.src("img/**/*.{png,jpg,svg}")
-  .pipe(imagemin([
-    imagemin.jpegtran({progressive: true}),
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.svgo()
-  ]))
-  .pipe(gulp.dest("img"));
+    .pipe(imagemin([
+      imagemin.jpegtran({
+        progressive: true
+      }),
+      imagemin.optipng({
+        optimizationLevel: 3
+      }),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("img"));
 });
 
 gulp.task("webp", function() {
   return gulp.src("img/**/*.{png,jpg}")
-  .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("img"));
+    .pipe(webp({
+      quality: 90
+    }))
+    .pipe(gulp.dest("img"));
 });
 
 gulp.task("serve", function() {
@@ -87,17 +93,18 @@ gulp.task("serve", function() {
 
   gulp.task("copy", function() {
     return gulp.src([
-      "fonts/**/*.{woff,woff2}",
-      "img/**",
-      "js/**"
-    ], {
-      base: "."
-    })
-    .pipe(gulp.dest("build"));
+        "fonts/**/*.{woff,woff2}",
+        "img/**",
+        "js/**"
+      ], {
+        base: "."
+      })
+      .pipe(gulp.dest("build"));
   });
 
   gulp.task("build", function(done) {
-    run("clean", "copy", "style", "sprite", "html", "jsmin" done);
+    run("clean", "copy", "style", "sprite", "html", "jsmin"
+      done);
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
