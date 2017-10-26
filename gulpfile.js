@@ -103,7 +103,7 @@ gulp.task("serve", function() {
   });
 
   gulp.task("build", function(done) {
-    run("clean", "copy", "style", "sprite", "html", "jsmin"
+    run("clean", "copy", "style", "sprite", "html", "jsmin",
       done);
   });
 
