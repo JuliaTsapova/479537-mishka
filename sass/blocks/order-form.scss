@@ -4,7 +4,7 @@
   // outline: 1px solid orange;
   padding: 24px 28px;
   width: 320px;
-  margin: 0 auto 30px;
+  margin: 0 auto 31px;
 }
 
 .order-form__fieldset {
@@ -405,10 +405,12 @@
 
     &--name {
       width: 374px;
+      height: 51px;
     }
 
     &--name:first-of-type {
       width: 427px;
+      height: 50px;
     }
 
     &--name[placeholder] {

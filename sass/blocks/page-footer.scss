@@ -45,24 +45,36 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+
+    &--catalog, &--form {
+      padding-top: 4px;
+    }
   }
 
   .page-footer__mishka {
     display: block;
     flex-basis: 185px;
     margin: 0;
-    padding: 50px 0 56px 0;
-  }
+    padding: 46px 0 60px 0;
+    }
 
   .page-footer__copyright {
     // padding: 54px 0;
     padding: 62px 0 46px 0;
     margin: 0;
-  }
 
+    &--catalog, &--form {
+      position: relative;
+      top: -8px;
+        }
+  }
+//catalog
   .page-footer__copyright-logo {
-    position: relative;
-    top: -4px;
+    // position: relative;
+    // top: -4px;
+    width: 30px;
+height: 32px;
+margin-top: -4px;
   }
 }
 
@@ -70,5 +82,15 @@
   .page-footer__wrapper {
     width: 1150px;
     padding: 0 50px;
+
+    &--catalog, &--form {
+      padding-top: 6px;
+    }
+  }
+
+  .page-footer__copyright {
+     &--form {
+      top: -12px;
+    }
   }
 }
