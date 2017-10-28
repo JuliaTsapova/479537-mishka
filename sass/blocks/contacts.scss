@@ -82,7 +82,7 @@
 
 .contacts__map {
   width: auto;
-  margin-bottom: 32px;
+  margin-bottom: 38px;
   position: relative;
 
   height: 457px;
@@ -223,7 +223,7 @@
     padding: 0;
     min-height: 152px;
     margin: 38px 165px 78px 172px;
-    margin-right: 0px;
+    // margin-right: 0px;
     // outline: 1px solid red;
   }
 
@@ -240,10 +240,10 @@
   }
 
   .contacts__map {
-    position: relative;
+    position: absolute;
     overflow: hidden;
-    top: -136px;
-    right: -32px;
+    top: 95px;
+    right: 50px;
     // margin: 74px 0 0;
     // order: 1;
     // right: 50px;

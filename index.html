@@ -93,27 +93,27 @@
       <ul class="features__list">
         <li class="features__item features__item--eco">
           <img src="img/icon-feature-flower.svg" width="32" height="37" alt="flower">
-          <span>Экологически чистые материалы</span>
+          <span>Экологически<br>чистые материалы</span>
         </li>
         <li class="features__item features__item--style">
           <img src="img/icon-feature-money.svg" width="47" height="27" alt="money">
-          <span>Скандинавский стиль по российской цене</span>
+          <span>Скандинавский стиль<br>по российской цене</span>
         </li>
         <li class="features__item features__item--like">
           <img src="img/icon-feature-heart.svg" width="33" height="28" alt="heart">
-          <span>Увеличивает лайки на фотографиях</span>
+          <span>Увеличивает лайки<br>на фотографиях</span>
         </li>
         <li class="features__item features__item--love">
           <img src="img/icon-feature-ball.svg" width="34" height="34" alt="ball">
-          <span>Связано вручную с любовью и умилением</span>
+          <span>Связано вручную с<br>любовью и умилением</span>
         </li>
         <li class="features__item features__item--support">
           <img src="img/icon-feature-rocket.svg" width="54" height="23" alt="rocket">
-          <span>Поддержка отечественного производителя</span>
+          <span>Поддержка отечественного<br>производителя</span>
         </li>
         <li class="features__item features__item--gift">
           <img src="img/icon-feature-gift.svg" width="32" height="32" alt="gift">
-          <span>Поставляется в подарочной упаковке</span>
+          <span>Поставляется в<br>подарочной упаковке</span>
         </li>
       </ul>
     </section>
@@ -152,12 +152,10 @@
         </p>
       </div>
       <div class="contacts__map">
-        <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBUHBOR1hB" width="auto" height="auto" frameborder="0"></iframe> -->
-
         <picture>
           <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <!-- <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта"> -->
+          <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
         </picture>
       </div>
       <script>
@@ -246,13 +244,13 @@
   <div class="modal">
     <p class="modal__title">Добавить в корзину</p>
     <p class="modal__size">Выберите размер:</p>
-    <form class="modal__list size-list">
-      <input type="radio" name="size" value="S" id="S" checked>
-      <label for="S" class="size-list__item" tabindex="0">S</label>
-      <input type="radio" name="size" value="S" id="S" checked>
-      <label for="M" class="size-list__item" tabindex="0">M</label>
-      <input type="radio" name="size" value="S" id="S" checked>
-      <label for="L" class="size-list__item" tabindex="0">L</label>
+    <form class="modal__list">
+      <input class="modal__input" type="radio" name="size" value="S" id="S" checked>
+      <label class="modal__label" for="S" tabindex="0">S</label>
+      <input class="modal__input" type="radio" name="size" value="M" id="M">
+      <label class="modal__label" for="M" tabindex="0">M</label>
+      <input class="modal__input" type="radio" name="size" value="L" id="L">
+      <label class="modal__label" for="L" tabindex="0">L</label>
     </form>
     <a class="modal__add button" href="#">Добавить</a>
   </div>

@@ -3,7 +3,8 @@ var initMenu = function() {
   if (window.screen.availWidth < 768) {
 
 
-    var menuButton = document.querySelector(".main-nav");
+    var menu = document.querySelector(".main-nav");
+    var menuButton = document.querySelector(".main-nav__toggle");
     var menuCatalog = document.querySelector(".main-list__item--catalog");
     var menuOrder = document.querySelector(".main-list__item--order");
     var menuSearch = document.querySelector(".main-list__item--search");
@@ -14,8 +15,8 @@ var initMenu = function() {
     menuOrder.style.display = "none";
     menuSearch.style.display = "none";
     menuBasket.style.display = "none";
-    menuButton.classList.remove("main-nav--opened");
-    menuButton.classList.add("main-nav--closed");
+    menu.classList.remove("main-nav--opened");
+    menu.classList.add("main-nav--closed");
 
     var closed = true;
     menuButton.addEventListener("click", function(evt) {
@@ -26,16 +27,16 @@ var initMenu = function() {
         menuSearch.style.display = "block";
         menuBasket.style.display = "block";
         pageHeader.style.height = "80px";
-        menuButton.classList.remove("main-nav--closed");
-        menuButton.classList.add("main-nav--opened");
+        menu.classList.remove("main-nav--closed");
+        menu.classList.add("main-nav--opened");
       } else {
         menuCatalog.style.display = "none";
         menuOrder.style.display = "none";
         menuSearch.style.display = "none";
         menuBasket.style.display = "none";
         pageHeader.style.height = "auto";
-        menuButton.classList.remove("main-nav--opened");
-        menuButton.classList.add("main-nav--closed");
+        menu.classList.remove("main-nav--opened");
+        menu.classList.add("main-nav--closed");
       }
     });
 
