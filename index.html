@@ -64,7 +64,7 @@
       <h2 class="popular__main-title">Вязаные корзинки</h2>
       <h3 class="popular__title">Товар недели</h3>
       <div class="popular__info-wrapper">
-        <p class="popular__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <p class="popular__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
         <table class="popular__info">
           <tr class="popular__info-row">
             <td>Цвет:</td>
@@ -143,7 +143,7 @@
         <p class="contacts__info contacts__info--email">
           <span class="contacts__info-type">e-mail:</span>
           <span class="contacts__info-value">
-            <a class="contacts__info__link">info@mimimishkashop.ru</a>
+            <a class="contacts__info-link" href="mailto:info@mimimim.ru">info@mimimishkashop.ru</a>
           </span>
         </p>
         <p class="contacts__info contacts__info--address">
@@ -151,11 +151,14 @@
           <span class="contacts__info-value contacts__info-value--address">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</span>
         </p>
       </div>
+      <div class="contacts__map">
+        <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBUHBOR1hB" width="auto" height="auto" frameborder="0"></iframe> -->
       <picture>
         <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-        <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
+        <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
       </picture>
+    </div>
       <a class="contacts__write button" href="feedback.html">Напишите нам</a>
     </section>
   </main>
@@ -220,11 +223,14 @@
   <div class="modal">
     <p class="modal__title">Добавить в корзину</p>
     <p class="modal__size">Выберите размер:</p>
-    <ul class="modal__list size-list">
-      <li class="size-list__item">S</li>
-      <li class="size-list__item">M</li>
-      <li class="size-list__item">L</li>
-    </ul>
+    <form class="modal__list size-list">
+      <input type="radio" name="size" value="S" id="S" checked>
+      <label for="S" class="size-list__item" tabindex="0">S</label>
+      <input type="radio" name="size" value="S" id="S" checked>
+      <label for="M" class="size-list__item" tabindex="0">M</label>
+      <input type="radio" name="size" value="S" id="S" checked>
+      <label for="L" class="size-list__item" tabindex="0">L</label>
+    </form>
     <a class="modal__add button" href="#">Добавить</a>
   </div>
   <script src="js/script.min.js"></script>
