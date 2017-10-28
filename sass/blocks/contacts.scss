@@ -85,6 +85,7 @@
   margin-bottom: 32px;
   position: relative;
 
+  height: 457px;
   &::before {
      content: "";
      display: block;
@@ -176,11 +177,12 @@
   }
 
   .contacts__map {
-    margin-bottom: 46px;
-
+    margin-bottom: 54px;
+    width: auto;
+    height: 457px;
     &::before {
       top: 138px;
-left: 364px;
+      left: 364px;
     }
   }
 
@@ -221,6 +223,7 @@ left: 364px;
     padding: 0;
     min-height: 152px;
     margin: 38px 165px 78px 172px;
+    margin-right: 0px;
     // outline: 1px solid red;
   }
 
@@ -237,15 +240,19 @@ left: 364px;
   }
 
   .contacts__map {
-    position: absolute;
-    top: 94px;
+    position: relative;
+    overflow: hidden;
+    top: -136px;
+    right: -32px;
     // margin: 74px 0 0;
     // order: 1;
-    right: 50px;
-
+    // right: 50px;
+    width: 525px;
+    height: 457px;
     &::before {
       top: 146px;
-left: 238px;
+// left: 238px;
+
     }
   }
 
