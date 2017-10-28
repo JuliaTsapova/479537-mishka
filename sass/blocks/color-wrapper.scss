@@ -1,6 +1,59 @@
+.color-wrapper {
+  &--type-of-product {
+    background-color: #f9f9f9;
+  }
+
+  &--modal {
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    opacity: 0.5;
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+}
 @media (min-width: $tablet-width) {
   .color-wrapper {
     width: 100%;
-    background-color: #f1f1f1;
+    // background-color: #f1f1f1;
+    &--type-of-product {
+      width: auto;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    &--type-of-product::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 14px;
+      position: absolute;
+      bottom: -1px;
+      z-index: 1;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      // background-position-x: 50%;
+      // background-position-y: 101%;
+      // background-size: 100% auto;
+      background-size: 102%;
+      background-position: top center;
+    }
   }
 }
+@media (min-width: $desktop-width) {
+  .color-wrapper {
+    &--type-of-product {
+      width: auto;
+    }
+
+      &--type-of-product::after {
+        height: 16px;
+        background-size: auto;
+        // background-position: 0 0;
+        // background-position: top center;
+      }
+    }
+  }

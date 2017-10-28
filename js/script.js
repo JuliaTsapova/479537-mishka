@@ -43,12 +43,10 @@ var initMenu = function() {
 };
 
 var initPopup = function() {
-  var modalWrapper = document.querySelector(".modal__wrapper");
+  var modalWrapper = document.querySelector(".color-wrapper--modal");
   var modal = document.querySelector(".modal");
   var orderButton = document.querySelector(".popular__order");
   var priceButton = document.querySelector(".product-card__price");
-  var modalClose = document.querySelector(".modal__add");
-
 
   var triggerModal = function(evt) {
     evt.preventDefault();
@@ -62,7 +60,7 @@ var initPopup = function() {
   if (priceButton) {
     priceButton.addEventListener("click", triggerModal);
   }
-  modalClose.addEventListener("click", function() {
+  modalWrapper.addEventListener("click", function() {
     modalWrapper.style.display = "none";
     modal.style.display = "none";
     evt.preventDefault();

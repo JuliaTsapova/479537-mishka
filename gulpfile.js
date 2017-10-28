@@ -55,6 +55,12 @@ gulp.task("jsmin", function() {
     .pipe(server.stream());
 });
 
+gulp.task("js", function() {
+  return gulp.src("js/picturefill.min.js")
+    .pipe(gulp.dest("build/js"))
+    .pipe(server.stream());
+});
+
 gulp.task("sprite", function() {
   return gulp.src("img/icon-*.svg")
     .pipe(svgstore({
@@ -111,6 +117,6 @@ gulp.task("serve", function() {
 });
 
 gulp.task("build", function(done) {
-  run("clean", "copy", "style", "sprite", "html", "jsmin",
+  run("clean", "copy", "style", "sprite", "html", "jsmin", "js",
     done);
 });

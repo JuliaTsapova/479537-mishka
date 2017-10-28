@@ -5,7 +5,11 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+  document.createElement("picture");
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -59,9 +63,6 @@
             <img class="product-card__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
           </picture>
         </a>
-        <!-- <img class="product-card__image product-card__image-mobile" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"> -->
-        <!-- <img class="product-card__image product-card__image-tablet" src="img/photo-hare-tablet.jpg" width="334" height="334" alt="Зайчик-попрыгайчик"> -->
-        <!-- <img class="product-card__image product-card__image-desktop" src="img/photo-hare-desktop.jpg" width="316" height="463" alt="Зайчик-попрыгайчик"> -->
         <div class="product-card__description">
           <a class="product-card__link" href="bunny.html">
             <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
@@ -78,9 +79,6 @@
             <img class="product-card__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзина для белья">
           </picture>
         </a>
-        <!-- <img class="product-card__image product-card__image-mobile" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзина для белья"> -->
-        <!-- <img class="product-card__image product-card__image-tablet" src="img/photo-bowl-tablet.jpg" width="334" height="334" alt="Корзина для белья"> -->
-        <!-- <img class="product-card__image product-card__image-desktop" src="img/photo-bowl-desktop.jpg" width="316" height="463" alt="Корзина для белья"> -->
         <div class="product-card__description">
           <a class="product-card__link" href="small-basket.html">
             <h2 class="product-card__title">Корзинка для белья</h2>
@@ -97,9 +95,6 @@
             <img class="product-card__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
           </picture>
         </a>
-        <!-- <img class="product-card__image product-card__image-mobile" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзина для игрушек"> -->
-        <!-- <img class="product-card__image product-card__image-tablet" src="img/photo-toys-tablet.jpg" width="334" height="334" alt="Большая корзина для игрушек"> -->
-        <!-- <img class="product-card__image product-card__image-desktop" src="img/photo-toys-desktop.jpg" width="316" height="463" alt="Большая корзина для игрушек"> -->
         <div class="product-card__description">
           <a class="product-card__link" href="big-basket.html">
             <h2 class="product-card__title">Большая корзинка для игрушек</h2>
@@ -178,7 +173,7 @@
       <p class="page-footer__copyright"><span>Разработано</span><a href="https://htmlacademy.ru/intensive/adaptive"><img class="page-footer__copyright-logo" src="img/logo-htmlacademy.svg" width="30" height="32" alt="HTML Academy"></a></p>
     </div>
   </footer>
-  <div class="modal__wrapper"></div>
+  <div class="color-wrapper color-wrapper--modal"></div>
   <div class="modal">
     <p class="modal__title">Добавить в корзину</p>
     <p class="modal__size">Выберите размер:</p>

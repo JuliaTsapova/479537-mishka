@@ -6,11 +6,15 @@
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui">
   <link rel="stylesheet" href="css/style.min.css">
+  <script>
+  document.createElement("picture");
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
   <header class="page-header">
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav">
       <ul class="main-nav__menu main-list  main-list--closed">
         <li class="logo">
           <a class="logo__link" href="index.html">
@@ -55,28 +59,28 @@
       <fieldset class="order-form__fieldset">
         <legend class="order-form__type-of-info">Тип</legend>
         <div class="order-form__content-wrapper order-form__content-wrapper--type">
-          <input class="order-form__input--type" type="radio" name="type" value="accessory" id="accessory" checked>
-          <label class="order-form__value-of-info order-form__value-of-info--type" for="accessory">Аксессуар для интерьера</label>
-          <input class="order-form__input--type" type="radio" name="type" value="toy" id="toy">
-          <label class="order-form__value-of-info order-form__value-of-info--type" for="toy">Детская игрушка</label>
+          <input class="order-form__input order-form__input--type" type="radio" name="type" value="accessory" id="accessory" checked>
+          <label class="order-form__value-of-info order-form__value-of-info--type" for="accessory" tabindex="0">Аксессуар для интерьера</label>
+          <input class="order-form__input order-form__input--type" type="radio" name="type" value="toy" id="toy">
+          <label class="order-form__value-of-info order-form__value-of-info--type" for="toy" tabindex="0">Детская игрушка</label>
         </div>
       </fieldset>
       <div class="color-wrapper">
         <fieldset class="order-form__fieldset">
           <legend class="order-form__type-of-info order-form__type-of-info--color">Цвет</legend>
           <div class="order-form__content-wrapper order-form__content-wrapper--color">
-            <input class="order-form__input--color" type="checkbox" name="white" value="white" id="white" checked>
-            <label class="order-form__value-of-info order-form__value-of-info--color" for="white">Белый</label>
-            <input class="order-form__input--color" type="checkbox" name="gray" value="gray" id="gray" checked>
-            <label class="order-form__value-of-info order-form__value-of-info--color" for="gray">Серый</label>
-            <input class="order-form__input--color" type="checkbox" name="tiffany" value="tiffany" id="tiffany">
-            <label class="order-form__value-of-info order-form__value-of-info--color" for="tiffany">«Тиффани»</label>
-            <input class="order-form__input--color" type="checkbox" name="black" value="black" id="black">
-            <label class="order-form__value-of-info order-form__value-of-info--color" for="black">Черный</label>
-            <input class="order-form__input--color" type="checkbox" name="pink" value="pink" id="pink">
-            <label class="order-form__value-of-info order-form__value-of-info--color" for="pink">Розовый</label>
-            <input class="order-form__input--color" type="checkbox" name="orange" value="orange" id="orange">
-            <label class="order-form__value-of-info order-form__value-of-info--color" for="orange">Оранжевый</label>
+            <input class="order-form__input order-form__input--color" type="checkbox" name="white" value="white" id="white" checked>
+            <label class="order-form__value-of-info order-form__value-of-info--color" for="white" tabindex="0">Белый</label>
+            <input class="order-form__input order-form__input--color" type="checkbox" name="gray" value="gray" id="gray" checked>
+            <label class="order-form__value-of-info order-form__value-of-info--color" for="gray" tabindex="0">Серый</label>
+            <input class="order-form__input order-form__input--color" type="checkbox" name="tiffany" value="tiffany" id="tiffany">
+            <label class="order-form__value-of-info order-form__value-of-info--color" for="tiffany" tabindex="0">«Тиффани»</label>
+            <input class="order-form__input order-form__input--color" type="checkbox" name="black" value="black" id="black">
+            <label class="order-form__value-of-info order-form__value-of-info--color" for="black" tabindex="0">Черный</label>
+            <input class="order-form__input order-form__input--color" type="checkbox" name="pink" value="pink" id="pink">
+            <label class="order-form__value-of-info order-form__value-of-info--color" for="pink" tabindex="0">Розовый</label>
+            <input class="order-form__input order-form__input--color" type="checkbox" name="orange" value="orange" id="orange">
+            <label class="order-form__value-of-info order-form__value-of-info--color" for="orange" tabindex="0">Оранжевый</label>
           </div>
         </fieldset>
       </div>
@@ -84,19 +88,19 @@
         <legend class="order-form__type-of-info order-form__type-of-info--name">ФИО</legend>
         <div class="order-form__content-wrapper order-form__content-wrapper--name">
           <label class="order-form__value-of-info" for="name">Имя:</label>
-          <input class="order-form__input--name" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+          <input class="order-form__input order-form__input--name" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
           <label class="order-form__value-of-info" for="surname">Фамилия:</label>
-          <input class="order-form__input--name" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+          <input class="order-form__input order-form__input--name" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
           <label class="order-form__value-of-info" for="patronymic">Отчество:</label>
-          <input class="order-form__input--name" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+          <input class="order-form__input order-form__input--name" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
         </div>
       </fieldset>
       <div class="color-wrapper">
         <div class="order-form__content-wrapper order-form__content-wrapper--contacts">
           <label class="order-form__type-of-info order-form__type-of-info--phone" for="phone">Тел</label>
-          <input class="order-form__input--contacts" type="tel" name="phone" id="phone" placeholder="+7 XXX XX XX*" required>
+          <input class="order-form__input order-form__input--contacts" type="tel" name="phone" id="phone" placeholder="+7 XXX XX XX*" required>
           <label class="order-form__type-of-info order-form__type-of-info--email" for="email">E-mail</label>
-          <input class="order-form__input--contacts" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+          <input class="order-form__input order-form__input--contacts" type="email" name="email" id="email" placeholder="Ваш Email*" required>
         </div>
       </div>
       <div class="order-form__content-wrapper order-form__content-wrapper--additionally">
@@ -165,6 +169,7 @@
       <p class="page-footer__copyright"><span>Разработано</span><a href="https://htmlacademy.ru/intensive/adaptive"><img class="page-footer__copyright-logo" src="img/logo-htmlacademy.svg" width="30" height="32" alt="HTML Academy"></a></p>
     </div>
   </footer>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

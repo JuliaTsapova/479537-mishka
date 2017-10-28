@@ -28,6 +28,11 @@
   position: relative;
 }
 
+.contacts__link {
+  color: $main-color;
+  text-decoration: none;
+}
+
 .contacts__info-row:first-of-type::after {
   content: "";
   display: block;
@@ -138,8 +143,9 @@
     }
 
     &--address .contacts__info-column:nth-child(2) {
-      width: 260px;
-      padding-right: 10px;
+      // width: 250px;
+      // padding-right: 10px;
+      padding-right: 0;
     }
   }
 
