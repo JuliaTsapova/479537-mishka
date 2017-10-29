@@ -109,14 +109,17 @@
 
 @media (min-width: $desktop-width) {
   .production {
-    margin: 3px 0 106px;
+    margin: 3px 0 104px;
     width: 1050px;
-    height: 454px;
+    min-height: 456px;
     justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
   }
 
   .production__title {
-    margin: 0 0 34px;
+    margin: 0 70px 34px 0;
     padding: 94px 0 0 20px;
     width: 238px;
     text-align: left;
@@ -128,12 +131,15 @@
   }
 
   .production__description {
-    margin: 0 0 48px;
+    margin: 0 66px 46px 0;;
     padding: 0 0 0 20px;
     width: 244px;
   }
 
   .production__video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
     &::after {
       left: 290px;
     }
@@ -145,6 +151,6 @@
 
   .production__order {
     width: 230px;
-    margin: 0 0 0 20px;
+    margin: 0 57px 0 0;
   }
 }
