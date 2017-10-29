@@ -47,10 +47,9 @@ var initPopup = function() {
   var modalWrapper = document.querySelector(".color-wrapper--modal");
   var modal = document.querySelector(".modal");
   var orderButton = document.querySelector(".popular__order");
-  var buttonBunny = document.querySelector(".product-card__basket--bunny");
-  var buttonSmallBasket = document.querySelector(".product-card__basket--small-basket");
-  var buttonBigBasket = document.querySelector(".product-card__basket--big-basket");
 
+  var cardBasket = document.querySelectorAll(".product-card__basket"),
+    i;
 
   var triggerModal = function(evt) {
     evt.preventDefault();
@@ -61,14 +60,11 @@ var initPopup = function() {
   if (orderButton) {
     orderButton.addEventListener("click", triggerModal);
   }
-  if (buttonBunny) {
-    buttonBunny.addEventListener("click", triggerModal);
-  }
-  if (buttonSmallBasket) {
-    buttonSmallBasket.addEventListener("click", triggerModal);
-  }
-  if (buttonBigBasket) {
-      buttonBigBasket.addEventListener("click", triggerModal);
+
+  if (cardBasket) {
+    for (i = 0; i < cardBasket.length; ++i) {
+      cardBasket[i].addEventListener("click", triggerModal);
+    }
   }
 
   modalWrapper.addEventListener("click", function() {

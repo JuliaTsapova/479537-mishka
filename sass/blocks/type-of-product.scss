@@ -15,14 +15,6 @@
   color: #ffffff;
   text-decoration: none;
   padding: 28px 113px 28px 30px;
-
-  &:hover {
-    padding-bottom: 33px;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .type-of-product__product {
@@ -70,10 +62,6 @@
     line-height: 30px;
     font-size: $main-font-size + 3;
     padding: 30px 138px 30px 36px;
-
-    &:hover {
-      padding-bottom: 35px;
-    }
   }
 
   .type-of-product__product {
@@ -97,10 +85,6 @@
 
   .type-of-product__link {
     padding: 28px 359px 28px 36px;
-
-    &:hover {
-      padding-bottom: 33px;
-    }
   }
 
   .type-of-product__product {

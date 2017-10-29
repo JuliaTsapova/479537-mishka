@@ -94,10 +94,6 @@
     &--bunny {
       margin-bottom: 55px;
     }
-
-    &--big-basket .product-card__info::after {
-      top: 184px;
-    }
   }
 
   .product-card__title {
@@ -165,14 +161,6 @@
     width: 316px;
     height: 462px;
     position: static;
-  }
-
-  .product-card__info {
-    &::after {
-      width: 256px;
-      top: 72px;
-      left: 28px;
-    }
   }
 
   .product-card__price {
