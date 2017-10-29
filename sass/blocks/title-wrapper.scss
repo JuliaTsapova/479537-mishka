@@ -1,5 +1,4 @@
 .title-wrapper {
-  // outline: 1px solid pink;
   display: block;
   height: 177px;
   width: auto;
@@ -28,44 +27,41 @@
   font-size: $main-font-size + 10;
   line-height: 30px;
   font-weight: 700;
-  // width: 244px;
   margin: 0 auto;
   text-align: center;
   padding: 70px 30px 0;
 
   &--form-page {
     margin: 0 auto;
-    // width: 320px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .title-wrapper {
     width: auto;
-    min-height: 224px;
-    // margin-bottom: 80px;
-    margin-bottom: 77px;
+    min-height: 232px;
+    margin-bottom: 69px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-position-x: 50%;
     background-position-y: 101%;
-    background-size: 100% auto;
+    background-size: 103% auto;
 
     &--main-page {
       margin: 0;
       background-image: url("../img/hero-tablet@1x.jpg");
       background-position: 50% -2px;
       background-size: 1150px auto;
+      background-repeat: no-repeat;
       min-height: 624px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/hero-tablet@2x.jpg");
-        // background-size: 1150px auto;
       }
     }
 
     &--form-page {
-      margin-bottom: 72px;
+      margin-bottom: 64px;
     }
   }
 
@@ -73,8 +69,8 @@
     font-size: $main-font-size + 26;
     line-height: 50px;
     width: 500px;
-    padding: 91px 0 0;
-    // padding: 152px 0 0 0;
+    padding: 93px 0 0;
+
     &--main-page {
       padding-top: 152px;
     }
@@ -84,13 +80,13 @@
 @media (min-width: $desktop-width) {
   .title-wrapper {
     width: auto;
-    height: 250px;
-    // margin-bottom: 134px;
-    margin-bottom: 130px;
+    min-height: 268px;
+    margin-bottom: 112px;
 
     &--main-page {
       margin: 0;
       height: 626px;
+      background-size: 1250px 746px;
       background-image: url("../img/hero-desktop@1x.jpg");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -99,7 +95,7 @@
     }
 
     &--form-page {
-      margin-bottom: 124px;
+      margin-bottom: 106px;
     }
   }
 

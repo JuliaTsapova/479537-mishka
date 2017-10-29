@@ -1,21 +1,19 @@
 .popular__wrapper {
   width: auto;
-  // outline: 1px solid blue;
 }
 
 .popular {
-  // outline: 1px solid red;
   padding: 30px 30px 37px;
-  min-height: 815px;
+  min-height: 828px;
   width: 320px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-}
-
-.popular > * {
-  // outline: 1px solid blue;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 120%;
 }
 
 .popular__main-title {
@@ -42,7 +40,6 @@
   color: #444444;
   line-height: 24px;
   font-weight: 400;
-  // outline: 1px solid blue;
   margin: 0 0 7px;
 }
 
@@ -54,7 +51,6 @@
   width: 260px;
   margin: 0 0 38px;
   position: relative;
-  // outline: 1px solid red;
 }
 
 .popular__info-row {
@@ -87,7 +83,6 @@
 }
 
 .popular__image {
-  // opacity: 0.5;
   margin: 0 0 18px;
 }
 
@@ -105,9 +100,10 @@
     min-height: 600px;
     width: 768px;
     align-items: flex-start;
-    padding: 46px 48px;
+    padding: 46px 48px 56px;
     flex-direction: row;
     position: relative;
+    background-size: 100%;
   }
 
   .popular__main-title {
@@ -118,11 +114,9 @@
   }
 
   .popular__title {
-    // width: auto;
     width: 130px;
     text-align: center;
     margin: 8px 0 50px auto;
-    // order: 1;
   }
 
   .popular__info-wrapper {
@@ -147,8 +141,8 @@
     position: absolute;
     top: 152px;
     right: 50px;
-    // width: 334px;
-    // height: 404px;
+    width: 333px;
+    height: 404px;
   }
 
   .popular__price {
@@ -168,23 +162,22 @@
   .popular {
     min-height: 805px;
     width: 1150px;
-    // background-image: url("../img/triple-set-desktop.jpg");
-    // background-repeat: no-repeat;
-    // background-position: 573px 74px;
     align-content: flex-start;
   }
 
   .popular__main-title {
     font-size: $main-font-size + 36;
     line-height: 57px;
-    margin-top: 82px;
-    margin-bottom: 46px;
+    margin-top: 80px;
+    margin-bottom: 49px;
     width: 870px;
   }
 
   .popular__image {
     top: 76px;
     z-index: -1;
+    width: 525px;
+    height: 636px;
   }
 
   .popular__title {
@@ -194,6 +187,7 @@
 
   .popular__info-wrapper {
     margin-left: 175px;
+    width: 295px;
   }
 
   .popular__description {

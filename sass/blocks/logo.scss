@@ -9,14 +9,14 @@
   padding-top: 22px;
 }
 
-.logo__link {
-  width: 86px;
-  height: 40px;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
+// .logo__link {
+//   width: 86px;
+//   height: 40px;
+//
+//   &:hover {
+//     cursor: pointer;
+//   }
+// }
 
 @media (min-width: $tablet-width) {
   .logo {
@@ -26,11 +26,23 @@
     justify-content: flex-start;
     border: none;
   }
+
+  .logo__image {
+    width: 112px;
+    height: 46px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .logo {
     height: 88px;
-    margin: 0 75px;
+    margin: 0 89px 0 66px;
+    padding-top: 9px;
+    // margin: 0 75px;
+  }
+
+  .logo__image {
+    width: 148px;
+    height: 73px;
   }
 }

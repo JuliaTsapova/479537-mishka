@@ -1,10 +1,9 @@
 .social-list {
-  padding: 25px 0;
-  width: 140px;
+  padding: 23px 4px 27px 0;
+  width: 144px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  // outline: 1px solid red;
   position: relative;
 
   &::after {
@@ -26,6 +25,6 @@
 
 @media (min-width: $tablet-width) {
   .social-list {
-    padding: 60px 0;
+    padding: 44px 3px 62px 0;
   }
 }
