@@ -18,12 +18,14 @@
 
   &--type {
     min-height: 140px;
+    height: 140px;
     padding: 34px 0 28px 64px;
     position: relative;
   }
 
   &--color {
     min-height: 382px;
+    height: 382px;
     padding: 38px 0 24px 64px;
     position: relative;
     margin-bottom: 20px;
@@ -279,12 +281,14 @@
     flex-wrap: wrap;
 
     &--type {
+      height: auto;
       min-height: 154px;
       flex-direction: column;
       padding: 0 145px 4px 80px;
     }
 
     &--color {
+      height: auto;
       min-height: 228px;
       margin-top: 32px;
       flex-direction: row;

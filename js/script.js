@@ -44,37 +44,39 @@ var initMenu = function() {
 };
 
 var initPopup = function() {
-  var modalWrapper = document.querySelector(".color-wrapper--modal");
-  var modal = document.querySelector(".modal");
-  var orderButton = document.querySelector(".popular__order");
+  try {
+    var modalWrapper = document.querySelector(".color-wrapper--modal");
+    var modal = document.querySelector(".modal");
+    var orderButton = document.querySelector(".popular__order");
 
-  var cardBasket = document.querySelectorAll(".product-card__basket"),
-    i;
+    var cardBasket = document.querySelectorAll(".product-card__basket"),
+      i;
 
-  var triggerModal = function(evt) {
-    evt.preventDefault();
-    modalWrapper.style.display = "block";
-    modal.style.display = "block";
-    return false;
-  };
-  if (orderButton) {
-    orderButton.addEventListener("click", triggerModal);
-  }
-
-  if (cardBasket) {
-    for (i = 0; i < cardBasket.length; ++i) {
-      cardBasket[i].addEventListener("click", triggerModal);
+    var triggerModal = function(evt) {
+      evt.preventDefault();
+      modalWrapper.style.display = "block";
+      modal.style.display = "block";
+      return false;
+    };
+    if (orderButton) {
+      orderButton.addEventListener("click", triggerModal);
     }
+
+    if (cardBasket) {
+      for (i = 0; i < cardBasket.length; ++i) {
+        cardBasket[i].addEventListener("click", triggerModal);
+      }
+    }
+
+    modalWrapper.addEventListener("click", function() {
+      modalWrapper.style.display = "none";
+      modal.style.display = "none";
+      evt.preventDefault();
+      return false;
+    });
+  } catch (e) {
+    console.log(e.message);
   }
-
-  modalWrapper.addEventListener("click", function() {
-    modalWrapper.style.display = "none";
-    modal.style.display = "none";
-    evt.preventDefault();
-    return false;
-  });
-
-
 };
 
 
