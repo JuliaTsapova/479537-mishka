@@ -94,6 +94,7 @@
 
   &--email {
     margin-bottom: 10px;
+    order: 2;
   }
 
   &--email::before {
@@ -221,6 +222,11 @@
     border-bottom: 2px solid #000000;
     margin-bottom: 30px;
     position: relative;
+    order: 3;
+  }
+
+  &--contacts:first-of-type {
+    order: 1;
   }
 
   &--contacts:focus,
@@ -230,9 +236,25 @@
     border-bottom-color: #62d1ba;
   }
 
+  &--contacts:focus + label::before,
+  &--contacts:hover + label::before,
+  &--contacts:valid + label::before {
+    background-image: url("../img/icon-mail-active.svg");
+  }
+
+  &--contacts:first-of-type:focus + label::before,
+  &--contacts:first-of-type:hover + label::before,
+  &--contacts:first-of-type:valid + label::before {
+    background-image: url("../img/icon-phone-active.svg");
+  }
+
   &:invalid,
   &:valid {
     color: #444444;
+  }
+
+  &:valid {
+    border-bottom-color: #62d1ba;
   }
 
   &::placeholder {
