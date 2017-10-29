@@ -1,8 +1,7 @@
 .features {
   font-weight: 700;
   line-height: 20px;
-  padding: 33px 30px 20px;
-  // outline: 1px solid purple;
+  padding: 28px 30px 20px;
   min-height: 810px;
   width: 320px;
   margin: 0 auto;
@@ -22,11 +21,9 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  // height: 710px;
 }
 
 .features__item {
-  // outline: 1px solid lightgray;
   flex-basis: 100px;
   display: flex;
   flex-direction: column;
@@ -35,7 +32,6 @@
   &--eco {
     flex-basis: 93px;
     margin-bottom: 30px;
-    // padding-right: 63px;
   }
 
   &--eco img {
@@ -46,13 +42,11 @@
   &--style {
     flex-basis: 93px;
     margin-bottom: 35px;
-    // padding-right: 36px;
   }
 
   &--like {
     flex-basis: 88px;
     margin-bottom: 33px;
-    // padding-right: 56px;
   }
 
   &--like img {
@@ -63,11 +57,10 @@
   &--love {
     flex-basis: 89px;
     margin-bottom: 35px;
-    // padding-right: 4px;
   }
 
   &--love img {
-        margin-left: 3px;
+    margin-left: 3px;
   }
 
   &--support {
@@ -82,11 +75,11 @@
 
   &--gift {
     flex-basis: 92px;
-    // padding-right: 10px;
     margin-bottom: 6px;
   }
+
   &--gift img {
-        margin-left: 3px;
+    margin-left: 3px;
   }
 }
 
@@ -105,7 +98,6 @@
   .features__list {
     margin-top: 42px;
     padding: 0 6px;
-    // height: 410px;
     align-content: flex-start;
     flex-direction: row;
     justify-content: flex-start;
@@ -116,43 +108,36 @@
     width: auto;
     font-size: $main-font-size + 3;
     line-height: 22px;
-    // flex-basis: 104px;
     flex-basis: 325px;
     min-height: 104px;
 
-
     &--eco {
       margin-bottom: 51px;
-      // padding: 6px 96px 0 0;
-      padding: 6px 0 0 0;
+      padding: 6px 0 0;
     }
 
     &--like {
-      // padding: 12px 86px 0 0;
-      padding: 12px 0 0 0;
+      padding: 12px 0 0;
       order: 4;
     }
 
     &--style {
-      // padding: 8px 64px 0 0;
-      padding: 8px 0 0 0;
+      padding: 8px 0 0;
       margin-bottom: 51px;
       order: 2;
     }
 
     &--love {
-      // padding: 10px 28px 0 6px;
       padding: 10px 0 0 6px;
       margin-bottom: 51px;
       order: 1;
     }
 
-      &--love img {
-            margin-left: 5px;
-      }
+    &--love img {
+      margin-left: 5px;
+    }
 
     &--support {
-      // padding: 11px 0 0 6px;
       padding: 11px 0 0 6px;
       margin-bottom: 51px;
       order: 3;
@@ -163,7 +148,6 @@
     }
 
     &--gift {
-      // padding: 8px 28px 0 6px;
       padding: 8px 0 0 6px;
       order: 5;
     }
@@ -171,8 +155,6 @@
     &--gift img {
       margin-left: 5px;
     }
-
-
   }
 }
 
@@ -180,7 +162,6 @@
   .features {
     width: 1147px;
     padding: 60px 246px 60px 220px;
-    // padding: 60px 0 60px 220px;
     min-height: 580px;
   }
 
@@ -190,17 +171,17 @@
   }
 
   .features__list {
-    // align-content: stretch;
     justify-content: space-between;
   }
 
   .features__item {
-    &--love img, &--gift img {
-    margin: 0;
-  }
-  &--support img {
-    margin-left: -8px;
-  }
-  }
+    &--gift img,
+    &--love img {
+      margin: 0;
+    }
 
+    &--support img {
+      margin-left: -8px;
+    }
+  }
 }

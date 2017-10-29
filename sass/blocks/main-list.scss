@@ -3,21 +3,17 @@
   margin: 0 auto;
   padding: 0;
   width: 320px;
-  // height: 410px;
   position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
   z-index: 1;
-  // outline: 1px solid green;
 }
 
 .main-list__item {
   width: 320px;
-  // display: none;
   padding: 26px 0 28px 75px;
-  // outline: 1px solid purple;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
   position: relative;
@@ -64,6 +60,15 @@
   line-height: 24px;
   font-weight: 700;
   color: $main-color;
+
+  &[href]:focus,
+  &[href]:hover {
+    color: rgba(0, 0, 0, .6);
+  }
+
+  &[href]:active {
+    color: rgba(0, 0, 0, .3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -214,20 +219,17 @@
 
     &--form {
       position: relative;
-    top: -4px;
-
+      top: -4px;
     }
   }
 
   .main-list__link {
     &--catalog {
-      // letter-spacing: 0.08em;
       font-size: $main-font-size;
     }
 
     &--order {
       font-size: $main-font-size;
-      // letter-spacing: 0.08em;
     }
 
     &--new {

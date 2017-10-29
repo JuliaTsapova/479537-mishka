@@ -1,6 +1,5 @@
 .reviews__content-wrapper {
-  padding: 30px 30px 48px;
-  // outline: 1px solid red;
+  padding: 30px 30px 44px;
   color: #444444;
   font-weight: 400;
   font-size: $main-font-size;
@@ -20,7 +19,6 @@
 }
 
 .reviews__list {
-  // outline: 1px solid lightblue;
   margin: 0;
 }
 
@@ -48,7 +46,6 @@
 
 .reviews {
   margin: 0 auto;
-  // outline: 1px solid green;
 }
 
 .reviews__toggles {
@@ -62,7 +59,6 @@
     padding: 78px 50px 0 46px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");
       background-size: 350px auto;
@@ -80,7 +76,6 @@
   .reviews__title {
     font-size: $main-font-size + 26;
     line-height: 50px;
-    // margin-bottom: 48px;
     margin-bottom: 33px;
     order: -2;
   }
