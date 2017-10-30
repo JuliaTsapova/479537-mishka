@@ -9,7 +9,8 @@
   padding-top: 22px;
 }
 
-.logo__link[href]:hover .logo__image, .logo__link[href]:focus .logo__image {
+.logo__link[href]:focus .logo__image,
+.logo__link[href]:hover .logo__image {
   opacity: 0.6;
 }
 

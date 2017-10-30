@@ -94,6 +94,9 @@
           </tr>
         </table>
         <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
           <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
           <img class="popular__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки">
@@ -106,27 +109,45 @@
       <h2 class="features__title">Коротко о нас:</h2>
       <ul class="features__list">
         <li class="features__item features__item--eco">
-          <img src="img/icon-feature-flower.svg" width="32" height="37" alt="flower">
+          <svg width="32" height="37">
+            <title>flower</title>
+            <use xlink:href="img/sprite.svg#icon-feature-flower"></use>
+          </svg>
           <span>Экологически<br>чистые материалы</span>
         </li>
         <li class="features__item features__item--style">
-          <img src="img/icon-feature-money.svg" width="47" height="27" alt="money">
+          <svg width="47" height="27">
+            <title>money</title>
+            <use xlink:href="img/sprite.svg#icon-feature-money"></use>
+          </svg>
           <span>Скандинавский стиль<br>по российской цене</span>
         </li>
         <li class="features__item features__item--like">
-          <img src="img/icon-feature-heart.svg" width="33" height="28" alt="heart">
+          <svg width="33" height="28">
+            <title>heart</title>
+            <use xlink:href="img/sprite.svg#icon-feature-heart"></use>
+          </svg>
           <span>Увеличивает лайки<br>на фотографиях</span>
         </li>
         <li class="features__item features__item--love">
-          <img src="img/icon-feature-ball.svg" width="34" height="34" alt="ball">
+          <svg width="34" height="34">
+            <title>ball</title>
+            <use xlink:href="img/sprite.svg#icon-feature-ball"></use>
+          </svg>
           <span>Связано вручную с<br>любовью и умилением</span>
         </li>
         <li class="features__item features__item--support">
-          <img src="img/icon-feature-rocket.svg" width="54" height="23" alt="rocket">
+          <svg width="54" height="23">
+            <title>rocket</title>
+            <use xlink:href="img/sprite.svg#icon-feature-rocket"></use>
+          </svg>
           <span>Поддержка отечественного<br>производителя</span>
         </li>
         <li class="features__item features__item--gift">
-          <img src="img/icon-feature-gift.svg" width="32" height="32" alt="gift">
+          <svg width="32" height="32">
+            <title>gift</title>
+            <use xlink:href="img/sprite.svg#icon-feature-gift"></use>
+          </svg>
           <span>Поставляется в<br>подарочной упаковке</span>
         </li>
       </ul>
@@ -137,7 +158,8 @@
         <div class="reviews__list  slider-list">
           <blockquote class="reviews__item  slider-list__item">
             <p class="reviews__text">Я молодая мама, но всё ровно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше
-              лайков!</p>
+              лайков!
+            </p>
             <div class="reviews__bottom">
               <cite class="reviews__author-name">Анастасия Красильникова <br>
                 <span class="reviews__author-nickname">@misssssiskras</span>
@@ -172,6 +194,9 @@
       </div>
       <div class="contacts__map">
         <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
           <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
           <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="322" height="457" alt="Карта">
