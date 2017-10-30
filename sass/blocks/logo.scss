@@ -9,14 +9,13 @@
   padding-top: 22px;
 }
 
-// .logo__link {
-//   width: 86px;
-//   height: 40px;
-//
-//   &:hover {
-//     cursor: pointer;
-//   }
-// }
+.logo__link[href]:hover .logo__image, .logo__link[href]:focus .logo__image {
+  opacity: 0.6;
+}
+
+.logo__link[href]:active .logo__image {
+  opacity: 0.3;
+}
 
 @media (min-width: $tablet-width) {
   .logo {
