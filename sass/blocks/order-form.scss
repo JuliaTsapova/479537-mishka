@@ -253,7 +253,8 @@
     color: #444444;
   }
 
-  &:valid {
+  &:active,
+  &[required]:valid {
     border-bottom-color: #62d1ba;
   }
 
