@@ -9,6 +9,14 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
+
+  &:hover {
+    box-shadow: 0 4px 19px -5px #c6c6c6;
+  }
+
+  &:active {
+    box-shadow: 0 3px 13px -5px #c6c6c6;
+  }
 }
 
 .product-card__title {
@@ -73,9 +81,13 @@
   margin-right: 8px;
 }
 
-.product-card__icon:focus,
-.product-card__icon:hover {
-  fill: #63d1bb;
+.product-card__icon:focus path,
+.product-card__icon:hover path {
+  fill: rgba(99, 209, 187, 1);
+}
+
+.product-card__icon:active path {
+  fill: rgba(99, 209, 187, 0.3);
 }
 
 @media (min-width: $tablet-width) {
