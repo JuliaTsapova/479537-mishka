@@ -22,8 +22,17 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 28px 0;
+  padding: 10px 0 40px;
   width: 185px;
+}
+
+.page-footer__copyright-link {
+  color: $main-color;
+  text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__mishka {
@@ -33,11 +42,18 @@
 }
 
 .page-footer__image--logo {
-  margin-top: -5px;
+  position: relative;
+  top: 12px;
+  left: 24px;
 }
 
 .page-footer__image:focus path,
 .page-footer__image:hover path {
+  fill: rgba(70, 193, 174, 1);
+}
+
+.page-footer__copyright-link:focus .page-footer__image--logo path,
+.page-footer__copyright-link:hover .page-footer__image--logo path {
   fill: rgba(70, 193, 174, 1);
 }
 
@@ -62,20 +78,25 @@
   }
 
   .page-footer__copyright {
-    padding: 62px 0 46px;
+    padding: 46px 0 60px;
     margin: 0;
   }
 
   .page-footer__image--logo {
     width: 30px;
     height: 32px;
-    margin-top: -4px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 1150px;
-    padding: 0 50px;
+    padding: 3px 50px 0;
+  }
+
+  .page-footer__copyright {
+    &--form {
+      padding: 42px 0 62px;
+    }
   }
 }

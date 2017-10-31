@@ -28,3 +28,9 @@
     padding: 56px 3px 56px 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social-list {
+    padding: 54px 3px 56px 0;
+  }
+}

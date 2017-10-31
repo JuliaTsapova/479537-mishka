@@ -39,6 +39,7 @@
     background-image: url("../img/icon-interior.svg");
     top: 27px;
     right: 36px;
+    opacity: 0.5;
   }
 
   &--toy::after {
@@ -50,10 +51,32 @@
     background-image: url("../img/icon-toy.svg");
     top: 24px;
     right: 27px;
+    opacity: 0.5;
   }
 
   &--toy {
     background-color: #56c3b2;
+  }
+
+  &--accessory:active,
+  &--accessory:focus,
+  &--accessory:hover {
+    background-color: #59d5bc;
+  }
+
+  &--toy:active,
+  &--toy:focus,
+  &--toy:hover {
+    background-color: #46c1ae;
+  }
+
+  &:focus::after,
+  &:hover::after {
+    opacity: 0.7;
+  }
+
+  &:active::after {
+    opacity: 0.3;
   }
 }
 
