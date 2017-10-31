@@ -102,6 +102,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+    padding-top: 53px;
   }
 
   .features__item {
@@ -109,27 +110,33 @@
     font-size: $main-font-size + 3;
     line-height: 22px;
     flex-basis: 325px;
-    min-height: 104px;
+    // min-height: 104px;
+    min-height: 84px;
+    position: relative;
+    justify-content: flex-start;
+    padding: 9px 0 0;
+    margin-bottom: 71px;
 
     &--eco {
-      margin-bottom: 51px;
-      padding: 6px 0 0;
+      // margin-bottom: 51px;
+      // margin-bottom: 71px;
     }
 
     &--like {
-      padding: 12px 0 0;
       order: 4;
+      margin-bottom: 0;
     }
 
     &--style {
-      padding: 8px 0 0;
-      margin-bottom: 51px;
+      // margin-bottom: 51px;
+      // margin-bottom: 69px;
       order: 2;
     }
 
     &--love {
-      padding: 10px 0 0 6px;
-      margin-bottom: 51px;
+      padding-left: 6px;
+      // margin-bottom: 51px;
+      // margin-bottom: 71px;
       order: 1;
     }
 
@@ -138,8 +145,8 @@
     }
 
     &--support {
-      padding: 11px 0 0 6px;
-      margin-bottom: 51px;
+      padding-left: 6px;
+      //  margin-bottom: 51px;
       order: 3;
     }
 
@@ -148,13 +155,19 @@
     }
 
     &--gift {
-      padding: 8px 0 0 6px;
+      padding-left: 6px;
       order: 5;
+      margin-bottom: 0;
     }
 
     &--gift svg {
       margin-left: 5px;
     }
+  }
+
+  .features__item-icon {
+    position: absolute;
+    top: -43px;
   }
 }
 
@@ -175,13 +188,23 @@
   }
 
   .features__item {
+    &--eco svg,
     &--gift svg,
+    &--like svg,
     &--love svg {
       margin: 0;
+    }
+
+    &--style svg {
+      margin-left: -8px;
     }
 
     &--support svg {
       margin-left: -8px;
     }
+  }
+
+  .features__item-icon {
+    left: 7px;
   }
 }
